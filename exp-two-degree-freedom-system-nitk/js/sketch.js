@@ -183,23 +183,52 @@ function draw() {
 //   handleEvents();
 // }
 
+
 function simstate() {
   var imgfilename = document.getElementById("playpausebutton").src;
   imgfilename = imgfilename.substring(
     imgfilename.lastIndexOf("/") + 1,
     imgfilename.lastIndexOf(".")
   );
+  var nextButton = document.getElementById("graphbutton");
+  var forwardButton = document.getElementById("screenchangesforward");
+  var previuousButton =document.getElementById("screenchangesbackward");
+
 
   if (animation) {
     noLoop();
     animation = false;
     document.getElementById("playpausebutton").src = "images/blueplaydull.svg";
     document.querySelector(".playPause").textContent = "Play";
+    nextButton.onclick = null; // Disable the next button
+    nextButton.style.cursor = "not-allowed"; // Update the cursor to indicate it's not clickable
+    nextButton.classList.add('disabled'); // Add any disabled styles if needed
+    forwardButton.onclick = null;
+    forwardButton.style.cursor = "not-allowed"; // Update the cursor to indicate it's not clickable
+    forwardButton.classList.add('disabled'); // Add any disabled styles if needed
+    previuousButton.onclick = null;
+    previuousButton.style.cursor = "not-allowed"; // Update the cursor to indicate it's not clickable
+    previuousButton.classList.add('disabled'); // Add any disabled styles if needed
+    
+    
   } else {
     loop();
     animation = true;
     document.getElementById("playpausebutton").src = "images/bluepausedull.svg";
     document.querySelector(".playPause").textContent = "Pause";
+  
+
+    nextButton.onclick = graphPlot; // Enable the next button
+    nextButton.style.cursor = "pointer"; // Update the cursor to indicate it's clickable
+    nextButton.classList.remove('disabled'); // Remove any disabled styles if present
+    forwardButton.onclick = screenchangeMag;
+    forwardButton.style.cursor = "pointer"; // Update the cursor to indicate it's clickable
+    forwardButton.classList.remove('disabled'); // Remove any disabled styles if present
+    previuousButton.onclick = screenChangePrevious;
+    previuousButton.style.cursor = "pointer"; // Update the cursor to indicate it's clickable
+    previuousButton.classList.remove('disabled'); // Remove any disabled styles if present
+    
+
   }
 }
 
