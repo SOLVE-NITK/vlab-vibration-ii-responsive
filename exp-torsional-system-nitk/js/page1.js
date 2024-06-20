@@ -61,6 +61,11 @@ function runPage1() {
     k2= $("#k2Spinner").spinner("value");
     j2= $("#j2Spinner").spinner("value");
 
+      fill(0);
+        textSize(12)
+        strokeWeight(1)
+        text("j1",450,200)
+          text("j2",510,220)
     // button1.draw();
     // button2.draw();
 

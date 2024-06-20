@@ -36,21 +36,25 @@ function runPage4() {
 
   stroke("red");
   textSize(15);
-  line(420, 165, 450, 165);
+  strokeWeight(3); 
+  line(340, 185, 370, 185);
 
   stroke("black");
+  strokeWeight(0.4); 
   text("Frequency response curve ", 380, 180 + 10);
   text(" with respect to  amplitude of", 380, 195 + 20);
-  text(" X1 and w1", 380, 205 + 30);
+  text(" X\u2081 and w\u2081", 380, 205 + 30);
 
   stroke("purple");
   textSize(15);
-  line(420, 260, 450, 260);
+  strokeWeight(3);
+  line(340, 274, 370, 274);
 
   stroke("black");
+  strokeWeight(0.4); 
   text("Frequency response curve ", 380, 230 + 50);
   text(" with respect to  amplitude of ", 380, 240 + 60);
-  text("X2 and w2", 380, 250 + 70);
+  text("X\u2082 and w\u2082", 380, 250 + 70);
 
   // x1 = $("#fSpinner").spinner("value");
   // x2 = $("#omegaSpinner").spinner("value");
@@ -63,14 +67,14 @@ function runPage4() {
   let dy = 250;
   stroke("red");
   strokeWeight(5);
-  point(50 + add, 100 + dy);
+  point(35 + add, 100 + dy);
   strokeWeight(1);
-  text("w2", 55 + add, 100 + dy);
+  text("ω\u2082", 55 + add, 100 + dy);
   stroke("blue");
   strokeWeight(5);
-  point(50 + add, 120 + dy);
+  point(35 + add, 120 + dy);
   strokeWeight(1);
-  text("w1", 55 + add, 120 + dy);
+  text("ω\u2081", 55 + add, 120 + dy);
 
   stroke("blue");
   strokeWeight(10);

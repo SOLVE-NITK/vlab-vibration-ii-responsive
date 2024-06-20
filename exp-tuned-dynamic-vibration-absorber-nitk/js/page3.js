@@ -1,20 +1,22 @@
 ﻿function runPage3() {
     background(255);
     // image(bg, 0, 0);
+    var sketchCanvas = createCanvas(750, 400);
+    sketchCanvas.parent("canvas-container");
     
     stroke(0);
-    fill(0);
+  
 
     fill(0);
     push();
     textSize(30);
-    // textFont("Nunito");
+    textFont("Nunito");
     // text('Tuned Dynamic Vibration Absorber',200, 50);
 
-    textSize(16);
-    text("CONTROLS", 750, 540);
-    text("VARIABLES", 730, 130);
-    pop();
+    // textSize(16);
+    // text("CONTROLS", 750, 540);
+    // text("VARIABLES", 730, 130);
+    // pop();
 
  
    // text('ω1 = ' + spring1.w1.toFixed(4) + " rad/s", 310, 680);
@@ -24,66 +26,71 @@
     // text('X2/Xst = ' + (abs(spring1.x1/(spring1.F0/spring1.k1))).toFixed(4) , 350, 695)
     let sum  = 40
     textSize(21)
-    text('Legend' , 400 , 170+sum)
+    strokeWeight(0);
+    text('Legend' , 500 , 50+sum)
 
     stroke('red');
    // text("Ω1" , 70+ 100*spring1.om1 +50, 450+10);
     strokeWeight(10);
     stroke('blue');
-    point(70+ 100*spring1.om1 +50, 400+10);
+    point(70+ 100*spring1.om1 +50, 300+10);
     strokeWeight(10);
     stroke('green');
-    point(70+ 100*spring1.om2+50 ,  400+10);
+    point(70+ 100*spring1.om2+50 ,  300+10);
     strokeWeight(10);
     stroke('red');
-    point(120 +  spring1.w1*100+50 ,  400+10);
+    point(120 +  spring1.w1*100+50 ,  300+10);
  
 
     let sub = 60;
-    strokeWeight(1.0);
-    line(420-sub, 200+sum-10, 430-sub, 200+sum)
+    stroke('red');
+    strokeWeight(5);
+    line(520-sub-5, 80+sum, 530-sub, 80+sum+10)
     stroke('black');
+    strokeWeight(0.5);
     textSize(16);
-    text('Frequency response curve ' , 440-sub , 200+sum);
-    text('with the absorber' , 440-sub , 220+sum)
-    strokeWeight(0.5); 
+    text('Frequency response curve ' , 540-sub , 80+sum);
+    text('with the absorber' , 540-sub , 100+sum)
+    strokeWeight(0.2); 
 
     stroke('black');
-    strokeWeight(1);
-    line(420-sub, 230+sum-10, 430-sub, 230+sum)
+    strokeWeight(5);
+    line(520-sub-5, 110+sum, 530-sub, 110+sum+10)
+    strokeWeight(.5);
     textSize(16);
-    text('Frequency response curve' , 440-sub , 240+sum);
-    text('wihtout the absorber' , 440-sub , 260+sum);
+    text('Frequency response curve' , 540-sub , 120+sum);
+    text('wihtout the absorber' , 540-sub , 140+sum);
     textSize(10);
   //  fill(250, 114, 43);
     strokeWeight(0);
 
     stroke('red');
     strokeWeight(10)
-    point(370 ,275+sum)
+    point(470 ,160+sum)
+   
     textSize(16);
-    strokeWeight(0);
+    strokeWeight(1);
     stroke('black');
-    text('ω1' , 390 , 278+sum);
+    text('ω \u2081' , 490 , 163+sum);
 
     strokeWeight(0);
 
     stroke('blue');
     strokeWeight(10)
-    point(370 ,295+sum)
+    point(470 ,180+sum)
     textSize(16);
-    strokeWeight(0);
+    strokeWeight(1);
     stroke('black');
-    text('Ω1' , 390 , 298+sum);
+    text('Ω \u2081' , 490 , 183+sum);
     strokeWeight(0);
 
     stroke('green');
     strokeWeight(10)
-    point(370 ,315+sum)
+    point(470 ,200+sum)
     textSize(16);
-    strokeWeight(0);
+    strokeWeight(1);
     stroke('black');
-    text('Ω2' , 390 , 318+sum);
+    text('Ω \u2082' , 490 , 203+sum);
     strokeWeight(0);
 
  
@@ -120,9 +127,9 @@
     magFac4.draw();
 
     
-    stroke(255);
-    fill(255);
-    rect(30, 125, 550, 55);
+    // stroke(255);
+    // fill(255);
+    // rect(30, 125, 550, 55);tjh
     // button5.draw()
     $('#p1, #p2, #p3,#p4,#p5,#p6').each(function() {
       // Perform actions on each element

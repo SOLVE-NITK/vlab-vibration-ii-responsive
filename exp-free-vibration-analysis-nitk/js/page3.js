@@ -15,8 +15,8 @@
     pop();
 
     textSize(15);
-    text('X1',20,200);
-    text('X2',20,300);
+    text('X\u2081',20,200);
+    text('X\u2082',20,300);
     strokeWeight(0.5);
     line(45,200,590,200);
     line(45,300,590,300);
@@ -40,6 +40,10 @@
     line(300,100,300+(spring1.ar1*spring1.x2*2),200);
     line(300+(spring1.ar1*spring1.x2*2),200,300+(spring1.x2*2),300);
     line(300+(spring1.x2*2),300,300,400);
+
+    // if(spring1.ar1.toFixed(4) * spring1.x2.toFixed(4)+spring1.w1.toFixed(4) <= -58 ||  ){
+
+    // }
 
     }
     else if(spring1.x1==(-spring1.x2)){
@@ -93,6 +97,26 @@
     line(400,100,400+(spring1.x1dd*2),200);
     line(400+(spring1.x1dd*2),200,400+(spring1.x2dd*2),300);
     line(400+(spring1.x2dd*2),300,400,400);
+
+    if(spring1.x1d.toFixed(4) <-60 || spring1.x2d.toFixed(4) < -60){
+      textFont("nunito");
+    textSize(11);
+    stroke(0);
+    strokeWeight(0.5);
+    text("Warning:The system is reaching resonance, so the MODE SHAPE will get enlarged beyond slide.", 60, 440);
+
+    }
+    if(spring1.x1dd.toFixed(4) < -100 || spring1.x2dd.toFixed(4) < -100){
+      textFont("nunito");
+    textSize(11);
+    stroke(0);
+    strokeWeight(0.5);
+    text("Warning:The system is reaching resonance, so the MODE SHAPE will get enlarged beyond slide.", 60, 440);
+
+    }
+
+
+
     }
     
     strokeWeight(1);

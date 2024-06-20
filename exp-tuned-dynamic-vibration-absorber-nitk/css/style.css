@@ -40,6 +40,7 @@ h1 {
   font-size: 3.2rem;
   color: var(--clr-text-clr);
   text-transform: uppercase;
+  text-align: center;
 }
 .container {
   padding: 0 0.5rem 0.5rem 0.5rem;

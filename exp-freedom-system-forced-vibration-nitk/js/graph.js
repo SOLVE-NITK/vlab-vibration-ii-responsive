@@ -27,7 +27,7 @@ class Graph {
 
         beginShape();
         stroke(r, g, b);
-        strokeWeight(2);
+        strokeWeight(1);
         noFill();
         for (let i = 0; i < this.wave.length; i++) {
             vertex(i + this.x, this.wave[i] + this.y);
@@ -41,12 +41,12 @@ class Graph {
         line(this.x, this.y, this.x + this.w, this.y);
 
         fill(0)
-        strokeWeight(0)
+        strokeWeight(1)
         textSize(16);
         text(this.xLabel, this.x + this.w, this.y);
         translate(this.x, this.y)
         rotate(radians(-90))
-        text(this.yLabel, -this.h + 40, -10);
+        text(this.yLabel, -this.h + 40+50, -10);
 
         pop();
     }

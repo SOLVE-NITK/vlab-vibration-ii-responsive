@@ -1,7 +1,13 @@
 ﻿function runPage2() {
   background(255);
   // image(bg, 0, 0);
-
+  textSize(15);
+  strokeWeight(1);
+  text('X\u2081',20,145);
+  text('X\u2082',20,255);
+  strokeWeight(0.3);
+  line(45,141,590,141);
+  line(45,251,590,251);
 
   if(spring1.x1==spring1.x2)
     {

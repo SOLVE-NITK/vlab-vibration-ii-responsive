@@ -214,12 +214,12 @@
             <span class="playPause">Pause</span>
           </li>
         
-          <li class="tool-list"  >
+          <!-- <li class="tool-list"  >
             <a href="#" class="tool-link" title="Refresh" onclick="refresh()" ontouchstart="refresh()">
               <img style="position: relative;height: 32px;" id="refreshbutton" src="images/bluecwdull.svg" />
             </a>
             <span class="refresh">Refresh</span>
-          </li>
+          </li> -->
             <li class="tool-list graph-button" title="Graph">
             <img
               id="graphbutton"
@@ -288,7 +288,7 @@
               <div class="variables-sections">
                 <div class="var-div">
                   <div class="input-container">
-                    <label for="fSpinner">k1</sub></label>
+                    <label for="fSpinner">k<sub>1</sub></label>
                     <input class="var-spinner" type="number" id="fSpinner" name="value" />
                     <span>N/m</span>
                   </div>
@@ -296,7 +296,7 @@
                 </div>
                 <div class="var-div">
                   <div class="input-container">
-                    <label for="omegaSpinner">m1</label>
+                    <label for="omegaSpinner">m<sub>1</sub></label>
                     <input class="var-spinner" type="number" id="omegaSpinner" name="value" />
                     <span>kg</span>
                   </div>
@@ -304,7 +304,7 @@
                 </div>
                 <div class="var-div">
                   <div class="input-container">
-                    <label for="k1Spinner">k2</label>
+                    <label for="k1Spinner">k<sub>2</sub></label>
                     <input class="var-spinner" type="number" id="k1Spinner" name="value" />
                     <span>N/m</span>
                   </div>
@@ -312,7 +312,7 @@
                 </div>
                 <div class="var-div">
                   <div class="input-container">
-                    <label for="m1Spinner">m2</label>
+                    <label for="m1Spinner">m<sub>2</sub></label>
                     <input class="var-spinner" type="number" id="m1Spinner" name="value" />
                     <span>kg</span>
                   </div>
@@ -380,15 +380,15 @@
                 <p>&#969;<sub>1</sub> = <span id="wd"></span></p> 
                 <p>&#969;<sub>2</sub> = <span id="wn"></span></p>
                 <p>&#969;<sub>1</sub>/&#969;<sub>2</sub> = <span id="ww1"></span></p>
-                <p id="p3">X1/X2 = <sapn id="xst"></span></p>   
+                <p id="p3">X<sub>1</sub>/X<sub>2</sub> = <sapn id="xst"></span></p>   
 
 
                 <!-- </div> -->
-                <p style="display: none" id="p2">X1 = <span id="x1"></span></p>
-                <p style="display: none" id="p5">X2 = <span id="x2"></span></p>
+                <p style="display: none" id="p2">X<sub>1</sub> = <span id="x1"></span></p>
+                <p style="display: none" id="p5">X<sub>2</sub> = <span id="x2"></span></p>
                
-                <p style="display: none" id="p1">X1/Xst = <span id="x1st"></span></p>
-                <p style="display: none" id="p4">X2/Xst = <span id="x2st"></span></p>
+                <p style="display: none" id="p1">X<sub>1</sub>/X<sub>st</sub> = <span id="x1st"></span></p>
+                <p style="display: none" id="p4">X<sub>2</sub>/X<sub>st</sub> = <span id="x2st"></span></p>
               
                 <p style="display: none">&#969;<sub></sub>/&#969;<sub>1</sub> = <span id="wn1"></span></p> 
             </div>

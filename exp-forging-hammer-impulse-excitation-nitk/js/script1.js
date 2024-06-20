@@ -9,22 +9,67 @@ function startsim() {
 
 
 // switches state of rotation between 1:CounterClockWise & -1:Clockwise
-function refresh() {
-  var imgfilename = document.getElementById("refreshbutton").src;
-  imgfilename = imgfilename.substring(
-    imgfilename.lastIndexOf("/") + 1,
-    imgfilename.lastIndexOf(".")
-  );
-  if (imgfilename == "bluecwdull") {
-    document.getElementById("refreshbutton").src = "images/blueccwdull.svg";
-    rotstatus = -1;
+
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("DOM fully loaded and parsed");
+
+  var refreshButton = document.getElementById("refreshbutton");
+  var refreshLink = document.getElementById('refreshLink');
+  
+  if (!refreshButton) {
+    console.error("Refresh button not found");
+    return;
   }
-  if (imgfilename == "blueccwdull") {
-    document.getElementById("refreshbutton").src = "images/bluecwdull.svg";
-    rotstatus = 1;
+  
+  if (!refreshLink) {
+    console.error("Refresh link not found");
+    return;
   }
-  location.reload(); // This line will refresh the page
+
+
+function refresh(event) {
+  event.preventDefault();
+  console.log("Refresh button clicked");
+  
+  if (window.getComputedStyle(refreshButton).opacity == "1") {
+    console.log("Button is enabled, proceeding with refresh");
+    var imgfilename = refreshButton.src;
+    imgfilename = imgfilename.substring(
+      imgfilename.lastIndexOf("/") + 1,
+      imgfilename.lastIndexOf(".")
+    );
+    if (imgfilename == "bluecwdull") {
+      refreshButton.src = "images/blueccwdull.svg";
+      rotstatus = -1;
+    } else if (imgfilename == "blueccwdull") {
+      refreshButton.src = "images/bluecwdull.svg";
+      rotstatus = 1;
+    }
+    location.reload();
+  } else {
+    console.log("Button is disabled");
+  }
 }
+function enableRefreshButton() {
+  refreshButton.style.opacity = "1";
+  refreshButton.style.pointerEvents = "auto";
+  console.log("Refresh button enabled");
+}
+
+function disableRefreshButton() {
+  refreshButton.style.opacity = "0.5";
+  refreshButton.style.pointerEvents = "none";
+  console.log("Refresh button disabled");
+}
+
+// Add event listeners to the refresh button
+refreshButton.addEventListener('click', refresh);
+refreshButton.addEventListener('touchstart', refresh);
+disableRefreshButton();
+
+// Enable the button after 3 seconds for demonstration purposes
+// setTimeout(enableRefreshButton, 3000);
+});
 
 function varinit() {
   varchange();

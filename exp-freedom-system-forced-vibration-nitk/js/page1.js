@@ -40,10 +40,10 @@ function runPage1() {
   spring1.update(t, factor);
   spring1.show(0, 1, 0);
 
-  text("k1" , 600 , 250 + spring1.y1);
-  text("k2" , 600 , 380 + spring1.y2);
-  text("m1" , 460 , 220 + spring1.y1);
-  text("m2" , 460 , 320 + spring1.y2);
+  text("k\u2081" , 500 , 250 + spring1.y2);
+  text("k\u2082" , 500 , 350 + spring1.y1);
+  text("m\u2081" , 380 , 220 + spring1.y2);
+  text("m\u2082" , 380 , 320 + spring1.y1);
 
   position_graph1.update(spring1.y1);
   position_graph1.draw(255, 0,0)
@@ -88,7 +88,7 @@ document.getElementById("wd").textContent=spring1.w1.toFixed(4);
   textSize(20);
   strokeWeight(0.5);
   textFont("'Nunito', sans-serif ");
-  text("FORCED VIBRATION SYSTEM", 315, 90);
+  text("FORCED VIBRATION SYSTEM", 190, 90);
 
 //   F0.draw();
 //   w.draw();

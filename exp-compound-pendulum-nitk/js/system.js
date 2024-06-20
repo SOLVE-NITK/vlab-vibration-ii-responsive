@@ -87,29 +87,34 @@ update(t, _mulfact)  {
 show(_stroke, _strockweight, _fill) {
   push();
 
-  let wid = spr.width-50;
-  let hei = spr.height-140;
+  // Adjust the translation to move the entire drawing up
+  translate(0, -100);  // Adjust the second parameter (-100 in this example) to move it higher or lower as needed
+
+  let wid = spr.width - 50;
+  let hei = spr.height - 140;
   var h = 255;
-  strokeWeight(3);
-  stroke(0,0,0);
-  line(this.x_equilibrium-10,this.y_equilibrium-120, this.x_equilibrium+10,this.y_equilibrium-120);
-  line(this.x_equilibrium,this.y_equilibrium-120, this.x1,this.y1-140);
+  strokeWeight(4);
+  stroke(0, 0, 0);
+  line(this.x_equilibrium - 10, this.y_equilibrium, this.x_equilibrium + 10, this.y_equilibrium);
+  line(this.x_equilibrium, this.y_equilibrium, this.x1, this.y1);
   fill(235);
-  line(this.x1,this.y1-120,this.x2-15,this.y2-140); // line
-  // console.log("circle")
-  ellipse(this.x1,this.y1-130, this.m1,this.m1);
+  line(this.x1, this.y1, this.x2, this.y2);
+  ellipse(this.x1, this.y1, this.m1, this.m1);
   fill(0);
-  textSize(this.m1/3);
+  textSize(this.m1 / 3);
   strokeWeight(1);
-  text("m1",this.x1-this.m1/3+5,this.y1-125);
+  text("m\u2081", this.x1 - this.m1 / 3 + 5, this.y1 + 3);
   fill(235);
-  strokeWeight(3);
-  ellipse(this.x2-10,this.y2-140, this.m2, this.m2); // circle
+  strokeWeight(4);
+  ellipse(this.x2, this.y2, this.m2, this.m2);
   fill(0);
-  textSize(this.m2/3);
+  textSize(this.m2 / 3);
   strokeWeight(1);
-  text("m2",this.x2-(this.m2/3)-5,this.y2-130);
+  text("m\u2082", this.x2 - (this.m2 / 3) + 5, this.y2 + 3);
+
+  pop(); // Restore original coordinate system
 }
+
 
 static mag_func1(x, obj)  {
 

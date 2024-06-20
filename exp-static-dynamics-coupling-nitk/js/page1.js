@@ -29,7 +29,7 @@ function runPage1() {
  
 document.getElementById("w1").textContent= automobile_sys.natomega1.toFixed(4) + " rad/s";
 document.getElementById("w2").textContent= automobile_sys.natomega2.toFixed(4) + " rad/s";
-document.getElementById("x1").textContent= (automobile_sys.ratio_1).toFixed(4) + " rad/s";
+document.getElementById("x1").textContent= (automobile_sys.ratio_1).toFixed(4) ;
 document.getElementById("x2").textContent= (automobile_sys.ratio_2).toFixed(4);
 document.getElementById("node1").textContent= (automobile_sys.ratio_1).toFixed(4) + " m from the C.G.";
 document.getElementById("node2").textContent= (automobile_sys.ratio_2).toFixed(4) + " m from the C.G.";

@@ -158,12 +158,12 @@ class System  {
       image(spr, this.x_equilibrium - (wid/2), this.y_equilibrium -12.5 -hei +this.y1+10 , wid, hei-this.y1);
       fill(0,0,0)
       textSize(15)
-      text("k1",this.x_equilibrium - (wid/2)-30, this.y_equilibrium -12.5 -(hei/2) +this.y1+10)
+      text("k\u2081",this.x_equilibrium - (wid/2)-30, this.y_equilibrium -12.5 -(hei/2) +this.y1+10)
       image(spr, this.x_equilibrium -(wid/2), this.y_equilibrium -12.5-25 -(2*hei) + this.y2 +10, wid, hei-this.y2 + this.y1)
     //  console.log(this.y_equilibrium -12.5-164 -(2*hei) +this.y2+this.y1+10,hei+this.y1);
       fill(0,0,0)
-      textSize(15)
-      text("k2",this.x_equilibrium -(wid/2)-30, this.y_equilibrium -12.5-25 -(1.5*hei) + this.y2 +10)
+      textSize(16)
+      text("k\u2082",this.x_equilibrium -(wid/2)-30, this.y_equilibrium -12.5-25 -(1.5*hei) + this.y2 +10)
 
       // base
       rectMode(CENTER)
@@ -180,13 +180,13 @@ class System  {
       rect(this.x_equilibrium ,this.y_equilibrium -(this.h/2) -hei +this.y1 -(this.h/2) +10, this.width-20, this.h) // bottom mass
       fill(255,255,255)
       textSize(12)
-      text("m1",this.x_equilibrium-5 ,this.y_equilibrium -(this.h/2) -hei +this.y1 -(this.h/2)+13)
+      text("m\u2081",this.x_equilibrium-5 ,this.y_equilibrium -(this.h/2) -hei +this.y1 -(this.h/2)+13)
       rectMode(CENTER)
       fill(139,69,19);
       rect(this.x_equilibrium ,this.y_equilibrium -50 -(2*hei) +this.y2 +10, this.width-20, this.h) // top mass
       fill(255,255,255);
       textSize(12)
-      text("m2",this.x_equilibrium-10,this.y_equilibrium -40 -(2*hei)-10 + this.y2+13)
+      text("m\u2082",this.x_equilibrium-10,this.y_equilibrium -40 -(2*hei)-10 + this.y2+13)
       
       fill(255,255,255);  
    //   ellipse(370+50 +30,this.y_equilibrium -(2*hei) +this.y2-15-25, 20, 20);

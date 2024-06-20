@@ -21,7 +21,7 @@
     magFac2.draw();
 
     stroke('purple');
-    strokeWeight(0);
+    strokeWeight(3);
     line(355 , 140 , 375 , 140);
     stroke('black');
     strokeWeight(0);
@@ -29,7 +29,7 @@
     text('Frequency Response of Mass 1' , 380 , 145);
 
     stroke('red');
-    strokeWeight(0);
+    strokeWeight(3);
     line(355 , 160 , 375 , 160);
     stroke('black')
     strokeWeight(0);
@@ -39,12 +39,12 @@
     let add = 320;
     let dy = 90;
     stroke('red')
-    strokeWeight(0)
+    strokeWeight(3)
     point(50+add , 100+dy)
     strokeWeight(0)
     text('w2' , 55+add ,100 +dy)
     stroke('purple')
-    strokeWeight(0)
+    strokeWeight(3)
     point(50+add , 120+dy);
     strokeWeight(0)
     text('w1' , 55 +add, 120+dy)

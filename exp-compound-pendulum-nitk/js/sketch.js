@@ -1,4 +1,4 @@
-﻿// canvas
+﻿  // canvas
 // let width = document.querySelector("#canvas-container").width;
 // let height = document.querySelector("#canvas-container").height;
 let width = 600;
@@ -122,14 +122,14 @@ function draw() {
   if (page1) {
     runPage1();
     if(animation==true){
-      spring1.initialise(l1,l2,a1,m1,a2,m2);
-      spring1.update(t, factor);
-      l1 = $("#fSpinner").spinner("value");
-    l2 = $("#omegaSpinner").spinner("value");
-    a1 = $("#k1Spinner").spinner("value");
-    m1 = $("#m1Spinner").spinner("value");
-    a2 = $("#k2Spinner").spinner("value");
-    m2 = $("#m2Spinner").spinner("value");
+    //   spring1.initialise(l1,l2,a1,m1,a2,m2);
+    //   spring1.update(t, factor);
+    //   l1 = $("#fSpinner").spinner("value");
+    // l2 = $("#omegaSpinner").spinner("value");
+    // a1 = $("#k1Spinner").spinner("value");
+    // m1 = $("#m1Spinner").spinner("value");
+    // a2 = $("#k2Spinner").spinner("value");
+    // m2 = $("#m2Spinner").spinner("value");
    
   }
   else{

@@ -25,6 +25,7 @@ class Graph {
     }
 
     draw(r, g, b)  {
+        
         push();
         let temp_y=[]; 
         beginShape();
@@ -36,7 +37,7 @@ class Graph {
      //  temp_y= this.wave;
         let flag = false;
         let flag2 = false;
-        let cont = 20
+        let cont = 20;
        for (let i = 0; i < this.wave.length; i++) {
         if (abs(this.wave[i])/this.h>0.75){
            if(flag==false)
@@ -49,8 +50,8 @@ class Graph {
         }
         else{
             if(flag==true)continue;
-            vertex(i + this.x, this.wave[i]-30 + this.y)
-            this.graphend = [i+this.x,this.wave[i]-30+this.y]
+            vertex(i + this.x, this.wave[i] + this.y)
+            this.graphend = [i+this.x,this.wave[i]+this.y]
         }
       
     }
@@ -62,12 +63,12 @@ class Graph {
             
         line(this.x, this.y, this.x, this.y + this.h);
         line(this.x, this.y, this.x, this.y - this.h);
-        line(this.x, this.y-30, this.x + this.w, this.y-30);
+        line(this.x, this.y, this.x + this.w, this.y);
         fill(0)
         strokeWeight(0)
         textSize(18);
-        text(this.xLabel, this.x + this.w, this.y-30);
-        translate(this.x, this.y-30)
+        text(this.xLabel, this.x + this.w, this.y);
+        translate(this.x, this.y)
         rotate(radians(-90))
         text(this.yLabel, 0 , -10);
         }

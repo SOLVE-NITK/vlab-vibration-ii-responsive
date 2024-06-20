@@ -53,11 +53,20 @@
     strokeWeight(0);
     text("MODE SHAPES", 235, 40);
     textSize(15);
-
+    strokeWeight(1); 
+    stroke(0,0,0);  
+    line(200, 100, 430, 100)
+   
+    line(200, 200, 430, 200)
+    // line(300,650,300,750)
+    textSize(16);
+    fill(0);
+    text("X\u2081", 180, 105);
+    text("X\u2082", 180, 205);
     
  
     let add = 150;
-    strokeWeight(3);
+    strokeWeight(2);
     stroke(0);
     line(120+add,50,120+add,300);
     stroke(0,0,255);
@@ -118,10 +127,10 @@ x10 = $("#x10Spinner").spinner("value");
   
       $('#variables').css('width', '200%');
       document.getElementById('Results').style.display = "none";
-      // $('#refreshbutton').css({
-      //   "opacity":0.5,
-      //     "pointer-events":"none"
-      //     });
+      $('#refreshbutton').css({
+        "opacity":0.5,
+          "pointer-events":"none"
+          });
       // document.getElementById('playpausebutton').style.display = "none";
       // document.getElementById('playPause').style.display = "none";
  

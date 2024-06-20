@@ -281,12 +281,12 @@ jquery.ui.touch-punch.min.js"
               <div class="variables-sections">
                 <div class="var-div">
                   <div class="input-container">
-                    <label for="T0Spinner">T0</label>
+                    <label for="T0Spinner">T<sub>0</sub></label>
                     <input
                       class="var-spinner"
                       id="T0Spinner"
                       name="value"
-                    
+                      type="number"
                     />
                     <span>N</span>
                   </div>
@@ -295,7 +295,7 @@ jquery.ui.touch-punch.min.js"
                 <div class="var-div">
                   <div class="input-container">
                     <label for="wSpinner">ω</label>
-                    <input class="var-spinner" id="wSpinner" name="value" />
+                    <input class="var-spinner" type="number" id="wSpinner" name="value" />
                     <span>rad/sec</span>
                   </div>
                   <div class="var-slider" id="wSlider"></div>
@@ -304,12 +304,13 @@ jquery.ui.touch-punch.min.js"
                 <div class="var-div">
                   <div class="input-container">
                     <label for="k1Spinner"
-                      >k1</label
+                      >k<sub>1</sub></label
                     >
                     <input
                       class="var-spinner"
                       id="k1Spinner"
                       name="value"
+                      type="number"
                     />
                     <span>N/m</span>
                   </div>
@@ -318,27 +319,29 @@ jquery.ui.touch-punch.min.js"
                 <div class="var-div">
                   <div class="input-container">
                     <label for="j1Spinner"
-                      >J1</label
+                      >J<sub>1</sub></label
                     >
                     <input
                       class="var-spinner"
                       id="j1Spinner"
                       name="value"
+                      type="number"
                     />
-                    <span>kg-m2</span>
+                    <span>kg-m<sub>2</sub></span>
                   </div>
                   <div class="var-slider" id="j1Slider"></div>
                 </div>
                 <div class="var-div">
                   <div class="input-container">
                     <label for="k2Spinner"
-                      >k2</label
+                      >k<sub>2</sub></label
                     >
                     <input
                       class="var-spinner"
                       id="k2Spinner"
                       name="value"
                      ontouchstart=""
+                     type="number"
                     />
                     <span>N/m</span>
                   </div>
@@ -347,15 +350,16 @@ jquery.ui.touch-punch.min.js"
                 <div class="var-div">
                   <div class="input-container">
                     <label for="j2Spinner"
-                      >J2</label
+                      >J<sub>2</sub></label
                     >
                     <input
                       class="var-spinner"
                       id="j2Spinner"
                       name="value"
                      ontouchstart=""
+                     type="number"
                     />
-                    <span>kg-m2</span>
+                    <span>kg-m<sub>2</sub></span>
                   </div>
                   <div class="var-slider" id="j2Slider"></div>
                 </div>
@@ -368,19 +372,24 @@ jquery.ui.touch-punch.min.js"
             <h3 class="task-title">Results</h3>
             <div class="settings-sections">
               <div class="comment-sections">
-                <p id="p3">ω/ω2 =<span id="ww2"></span></p>
-                 <p id="p1">ω1 = <span id="w1"></span> </p>
-                <p id="p2">ω2 =  <span id="w2"></span>  </p>
+                <div class="grid-container">
+                   
+                    <p id="p3">ω/ω<sub>2</sub> = <span id="ww2"></span></p>
+                    <p id="p1">ω<sub>1</sub> = <span id="w1"></span></p>
+                    <p id="p2">ω<sub>2</sub> = <span id="w2"></span></p>
+                </div>
                 <div id="r1">
-                  <div class="grid-container1">
-                    <p id="p7">Θ2/Θst =<span id="Θ22"></span></p>
-                    <p id="p4">Θ1/Θst =<span id="Θ1"></span></p>
-                    <p id="p8">Θ2 = <span id="Θ2"></span></p>
-                    <p id="p5">Θ =<span id="Θ"></span></p>
-                    <p id="p6">Θst = <span id="Θst"></span></p>
-                    <p id="p9">Θst = <span id="Θst2"></span></p>
+                    <div class="grid-container1">
+                       
+                        <p id="p7">Θ<sub>2</sub>/Θ<sub>st</sub>  = <span id="Θ22"></span></p>
+                        <p id="p4">Θ<sub>1</sub>/Θ<sub>st</sub>  = <span id="Θ1"></span></p>
+                        <p id="p8">Θ<sub>2</sub> = <span id="Θ2"></span></p>
+                        <p id="p5">Θ = <span id="Θ"></span></p>
+                        <p id="p6">Θ<sub>st</sub>  = <span id="Θst"></span></p>
+                        <p id="p9">Θ<sub>st</sub>  = <span id="Θst2"></span></p>
+                    </div>
                 </div>
-                </div>
+            </div>
               
                
               </div>

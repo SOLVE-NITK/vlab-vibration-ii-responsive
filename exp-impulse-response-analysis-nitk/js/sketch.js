@@ -94,9 +94,9 @@ function setup() {
 
   spring1 = new System(450, 265, 90, 25);
     
-    position_graph1 = new Graph(100, 195, 100, 220, "x1", "t");
+    position_graph1 = new Graph(100, 195, 100, 220, "x\u2081", "t");
 
-    position_graph2 = new Graph(100, 110, 100, 220, "x2", "t");
+    position_graph2 = new Graph(100, 110, 100, 220, "x\u2082", "t");
 
     magFac1 = new DynamicGraph(50, 330, 300, 220, "X/Xst", "ω", 0,7,0,10, System.mag_func1 , 0);
     magFac2 = new DynamicGraph(50, 330, 300, 220, "X/Xst", "ω",0, 7.2,0,10, System.mag_func2,255);

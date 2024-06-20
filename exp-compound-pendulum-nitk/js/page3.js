@@ -6,7 +6,7 @@
   fill(0);
 
   push();
-  strokeWeight(1);
+  strokeWeight(3);
     textSize(36);
     textFont("Times");
   // textSize(36);
@@ -18,8 +18,8 @@
   // text("VARIABLES", 655, 107);
   pop();
   textSize(15);
-  text('X1',20,265);
-  text('X2',20,385);
+  text('X\u2081',20,265);
+  text('X\u2082',20,385);
   strokeWeight(0.3);
   line(45,260,590,260);
   line(45,380,590,380);
@@ -30,7 +30,7 @@
   textSize(15);
   text("When the initial excitation is given same to both masses in same direction, it",30,50);
   text("gives only the first mode shape of the system",150,70);
-  strokeWeight(0.3);
+  strokeWeight(3);
   stroke(0);
   line(300,78,300,378);
   stroke(0,0,255);
@@ -44,7 +44,7 @@
   else if(spring1.k1==(-spring1.k2)){
     textFont("'Nunito', sans-serif");
     textSize(20);
-    strokeWeight(0.3);
+    strokeWeight(3);
     text("MODE SHAPE", 250, 20);
     textSize(15);
     text("When the initial excitation is given same to both masses in different direction, it",30,50)

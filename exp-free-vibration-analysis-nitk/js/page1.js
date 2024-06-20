@@ -83,8 +83,8 @@ function runPage1() {
   k2= $("#k2Spinner").spinner("value");
   m2= $("#m2Spinner").spinner("value");
 
- 
- 
+  document.getElementById("taskResult").innerHTML= "Result";
+  document.getElementById("taskResult1").innerHTML= "Result";
 
   t = t + dt;
   function adjustCommentsWidth() {

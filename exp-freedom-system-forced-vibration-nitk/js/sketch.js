@@ -101,8 +101,8 @@ function simstate() {
 
 
 // canvas
-let width = 800;
-let height = 600;
+let width = 600;
+let height = 450;
 
 
 // counter
@@ -162,19 +162,20 @@ function preload() {
 function setup() {
     textFont("Comic Sans MS");
     
-    var sketchCanvas =createCanvas(width+ 100, height);
+    var sketchCanvas =createCanvas(600, 450);
     sketchCanvas.parent("canvas-container");
     // bg.resize(width +100 , height+180);
     
-    spring1 = new System(550, 265, 90, 25);
+    spring1 = new System(450, 240, 90, 25);
    // spring2 = new System(450 ,365 , 90  ,25);
 
-    position_graph1 = new Graph(200, 400, 100, 220, "x2", "t");
+   strokeWeight(2);
+    position_graph1 = new Graph(50, 350, 100, 220, "x\u2082", "t");
 
-    position_graph2 = new Graph(200, 200, 100, 220, "x1", "t");
+    position_graph2 = new Graph(50, 150, 100, 220, "x\u2081", "t");
 
-    magFac1 = new DynamicGraph(50+20, 400+50, 300, 220, "X1/Xst", "ω/ω2", 0,7,0,10, System.mag_func1);
-    magFac2 = new DynamicGraph(50+20, 400+50, 300, 220, "X2/Xst", "ω/ω2",0, 7,0,10, System.mag_func2);
+    magFac1 = new DynamicGraph(50+20, 400+50, 300, 220, "X\u2081/Xst", "ω/ω\u2082", 0,7,0,10, System.mag_func1);
+    magFac2 = new DynamicGraph(50+20, 400+50, 300, 220, "X\u2082/Xst", "ω/ω\u2082",0, 7,0,10, System.mag_func2);
     varinit();
     F0 = $("#stiffnessSpinner").spinner("value");
     w = $("#massSpinner").spinner("value");

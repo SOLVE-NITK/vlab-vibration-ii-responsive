@@ -140,7 +140,7 @@ class System  {
   textSize(12)
   
  
-  ellipse(370+50 +140,constant+this.y_equilibrium -50 -(2*hei) +this.y2-15-20, 32, 32);
+  ellipse(370+50 +40,constant+this.y_equilibrium -50 -(2*hei) +this.y2-15-20, 32, 32);
   //fill(255,0,255);
   //rect(this.x_equilibrium - this.width/2, this.y_equilibrium + this.y2 +this.h+50, this.width, this.h)
   
@@ -153,7 +153,7 @@ class System  {
 
 
    fill(255, 0, 0);
-   ellipse(559 +x  ,constant+this.y_equilibrium -50 -(2*hei) +this.y2-15-20 + y, 6, 6);
+   ellipse(460 +x  ,constant+this.y_equilibrium -50 -(2*hei) +this.y2-15-20 + y, 6, 6);
 
 
 

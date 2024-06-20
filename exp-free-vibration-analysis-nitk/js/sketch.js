@@ -69,8 +69,8 @@ function preload() {
     "opacity": 1,
     "pointer-events": "auto"
   });
-
-
+  document.getElementById("taskResult").innerHTML= "Description";
+  document.getElementById("taskResult1").innerHTML= "Description";
   page=0;
 
 
@@ -99,16 +99,16 @@ function setup() {
 
   spring1 = new System(450, 365, 90, 25);
 
-  position_graph1 = new Graph(50, 295, 100, 220, "x1", "t");
+  position_graph1 = new Graph(50, 295, 100, 220, "x\u2081", "t");
 
-  position_graph2 = new Graph(50, 210, 100, 220, "x2", "t");
+  position_graph2 = new Graph(50, 210, 100, 220, "x\u2082", "t");
 
   magFac1 = new DynamicGraph(
     50,
     400,
     300,
     220,
-    "X1/Xst",
+    "X/Xst",
     "ω/ω2",
     0,
     7,
@@ -223,7 +223,8 @@ function updateContent() {
     $(this).css('display', 'none');
 });
     
-
+document.getElementById("taskResult").innerHTML= "Description";
+  document.getElementById("taskResult1").innerHTML= "Description";
 
 
 
@@ -255,6 +256,8 @@ function updateContent() {
    
     $(this).css('display', 'block');
 });
+document.getElementById("taskResult").innerHTML= "Result";
+document.getElementById("taskResult1").innerHTML= "Result";
    
     page0=false;
     page1=true;

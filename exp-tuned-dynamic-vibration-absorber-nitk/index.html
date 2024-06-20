@@ -286,6 +286,7 @@ jquery.ui.touch-punch.min.js"
                       class="var-spinner"
                       id="FoSpinner"
                       name="value"
+                      type="number"
                     
                     />
                     <span>N</span>
@@ -295,7 +296,7 @@ jquery.ui.touch-punch.min.js"
                 <div class="var-div">
                   <div class="input-container">
                     <label for="wSpinner">ω</label>
-                    <input class="var-spinner" id="wSpinner" name="value" />
+                    <input class="var-spinner" id="wSpinner" type="number" name="value" />
                     <span>rad/sec</span>
                   </div>
                   <div class="var-slider" id="wSlider"></div>
@@ -303,12 +304,13 @@ jquery.ui.touch-punch.min.js"
                 <div class="var-div">
                   <div class="input-container">
                     <label for="m1Spinner"
-                      >m1</label
+                      >m<sub>1</sub></label
                     >
                     <input
                       class="var-spinner"
                       id="m1Spinner"
                       name="value"
+                      type="number"
                     />
                     <span>kg</span>
                   </div>
@@ -317,12 +319,13 @@ jquery.ui.touch-punch.min.js"
                 <div class="var-div">
                   <div class="input-container">
                     <label for="k1Spinner"
-                      >k1</label
+                      >k<sub>1</sub></label
                     >
                     <input
                       class="var-spinner"
                       id="k1Spinner"
                       name="value"
+                      type="number"
                     />
                     <span>N/m</span>
                   </div>
@@ -331,12 +334,13 @@ jquery.ui.touch-punch.min.js"
                 <div class="var-div">
                   <div class="input-container">
                     <label for="m2Spinner"
-                      >m2</label
+                      >m<sub>2</sub></label
                     >
                     <input
                       class="var-spinner"
                       id="m2Spinner"
                       name="value"
+                      type="number"
                      ontouchstart=""
                     />
                     <span>kg</span>
@@ -346,12 +350,13 @@ jquery.ui.touch-punch.min.js"
                 <div class="var-div">
                   <div class="input-container">
                     <label for="k2Spinner"
-                      >k2</label
+                      >k<sub>2</sub></label
                     >
                     <input
                       class="var-spinner"
                       id="k2Spinner"
                       name="value"
+                      type="number"
                      ontouchstart=""
                     />
                     <span>N/m</span>
@@ -366,15 +371,15 @@ jquery.ui.touch-punch.min.js"
             <h3 class="task-title">Results</h3>
             <div class="settings-sections">
               <div class="comment-sections">
-                 <p id="p1">ω1 = <span id="w1"></span> </p>
-                <p id="p2">ω2 =  <span id="w2"></span>  </p>
-                <p id="p4">ω/ω1 =<span id="ww1"></span></p>
-                <p id="p3">ω/ω2 =<span id="ww2"></span></p>
-                <p id="p5">X1 =<span id="x1"></span></p>
-                <p id="p6">X2 = <span id="x2"></span></p>
+                 <p id="p1">ω<sub>1</sub> = <span id="w1"></span> </p>
+                <p id="p2">ω<sub>2</sub> =  <span id="w2"></span>  </p>
+                <p id="p4">ω/ω<sub>1</sub> =<span id="ww1"></span></p>
+                <p id="p3">ω/ω<sub>2</sub> =<span id="ww2"></span></p>
+                <p id="p5">X<sub>1</sub> =<span id="x1"></span></p>
+                <p id="p6">X<sub>2</sub> = <span id="x2"></span></p>
 
-                <p id="p7">X2 = <span id="x22"></span></p>
-                <p id="p8">Xst =  <span id="Xst"></span></p>
+                <p id="p7">X<sub>2</sub> = <span id="x22"></span></p>
+                <p id="p8">X<sub>st</sub> =  <span id="Xst"></span></p>
                
               </div>
             </div>

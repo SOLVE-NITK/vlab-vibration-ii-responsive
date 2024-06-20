@@ -34,7 +34,7 @@ function runPage1() {
     image(dia, 30,210,150,160);
     fill(0);
     strokeWeight(0.5);
-    arc(spring1.x_equilibrium,spring1.y_equilibrium-119 , 15, 15, 0, PI);
+    arc(spring1.x_equilibrium,spring1.y_equilibrium-100 , 15, 15, 0, PI);
     $('#playpausebutton').css({
       "opacity":1,
       "pointer-events":"auto"

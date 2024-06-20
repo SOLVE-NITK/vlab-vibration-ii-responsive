@@ -3,6 +3,8 @@ function runPage1() {
     // image(bg, 0, 0)
     
     stroke(0);
+    var sketchCanvas = createCanvas(850, 500);
+    sketchCanvas.parent("canvas-container");
 
     fill(0);
     push();
@@ -17,7 +19,7 @@ function runPage1() {
     pop();
 
     push();
-    stroke(0, 100);
+    // stroke(0, 100);
 
     // for (let i = 20; i < 591; i++) {
     //     point(i, 480);
@@ -33,11 +35,11 @@ function runPage1() {
     spring1.initialise(F0,w,m1,k1,m2 , k2 );
     spring1.update(t, factor);
     spring1.show(0, 1, 0);
-    text("m1" , 350 , 100);
-    text("k1" , 550-20 , 280 );
-    text("k2" , 550-10 , 400 );
-    text("m1" , 350 , 100+180 );
-    text("m2" , 350 ,250 +150);
+    // text("m1" , 450 , 100);
+    // text("k1" , 650+20 , 280 );
+    // text("k2" , 650+20 , 400 );
+    // text("m1" , 450 , 100+180 );
+    // text("m2" , 450 ,250 +150);
 
     position_graph1.update(spring1.y1);
     position_graph1.draw(255, 0,0)
@@ -48,10 +50,10 @@ function runPage1() {
     position_graph3.update(spring1.y3);
     position_graph3.draw(255, 0,0)
 
-    strokeWeight(0)
+    // strokeWeight(0)
 
-    text('Machine with  an absorber' , 300 , 180);
-    text('Machine without an absorber' , 300 , 20);
+    text('Machine with  an absorber' , 450 , 180);
+    text('Machine without an absorber' , 450 , 20);
 
     textSize(16);
     textFont("nunito")
@@ -74,9 +76,9 @@ function runPage1() {
    // text('X1/Xst = ' +  (abs(spring1.x1/(spring1.F0/spring1.k1))).toFixed(4) , 40, 720)
    // text('X2/Xst = ' + (spring1.w/spring1.w1).toFixed(4) + " rad/s", 310, 690)
     
-    strokeWeight(0.5);   
-    line(0, 650, 680, 650)
-    line(300,650,300,750) 
+    strokeWeight(0);   
+    // line(0, 650, 680, 650)
+    // line(300,650,300,750) 
     $('#p1, #p2, #p3,#p4,#p5,#p6').each(function() {
       // Perform actions on each element
       $(this).css('display', 'block');

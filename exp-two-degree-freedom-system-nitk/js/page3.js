@@ -20,9 +20,9 @@
   // text("CONTROLS", 655, 417);
   // text("VARIABLES", 655, 107);
   pop();
-  textSize(15);
-  text("X1", 20, 200);
-  text("X2", 20, 300);
+  textSize(18);
+  text("X\u2081", 20, 200);
+  text("X\u2082", 20, 300);
   strokeWeight(0.5);
   line(45, 200, 590, 200);
   line(45, 300, 590, 300);
@@ -67,7 +67,7 @@
     textSize(14.5);
     text("MODE SHAPE", 250, 10); // Adjusted from (250, 110)
     textFont("'Nunito', sans-serif");
-    textSize(14.5);
+    textSize(12.5);
     text(
       "When the initial excitation is given same to both masses in same direction, it",
       30,
@@ -88,7 +88,10 @@
     textFont("'Nunito', sans-serif;");
     textSize(20);
     text("MODE SHAPE", 250, 50);
-    textSize(15);
+    textFont("'Nunito', sans-serif");
+  textSize(15.5);
+
+  strokeWeight(0.7);
     text(
       "When the initial excitation is given same to both masses in different direction, it",
       30,
@@ -137,7 +140,25 @@
     line(400, 100, 400 + spring1.x1dd * 2, 200); // Adjusted from (400, 200, 400 + (spring1.x1dd * 2), 300)
     line(400 + spring1.x1dd * 2, 200, 400 + spring1.x2dd * 2, 300); // Adjusted from (400 + (spring1.x1dd * 2), 300, 400 + (spring1.x2dd * 2), 400)
     line(400 + spring1.x2dd * 2, 300, 400, 400); // Adjusted from (400 + (spring1.x2dd * 2), 400, 400, 500)
+
+    if(spring1.x1d.toFixed(4) <-60 || spring1.x2d.toFixed(4) < -60){
+      textFont("nunito");
+    textSize(11);
+    stroke(0);
+    strokeWeight(0.5);
+    text("Warning:The system is reaching resonance, so the MODE SHAPE will get enlarged beyond slide.", 60, 440);
+
+    }
+    if(spring1.x1dd.toFixed(4) < -100 || spring1.x2dd.toFixed(4) < -100){
+      textFont("nunito");
+    textSize(11);
+    stroke(0);
+    strokeWeight(0.5);
+    text("Warning:The system is reaching resonance, so the MODE SHAPE will get enlarged beyond slide.", 60, 440);
+
+    }
   }
+
 
   strokeWeight(1);
   spring1.initialise(x1, x2, k1, m1, k2, m2);

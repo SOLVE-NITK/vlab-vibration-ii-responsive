@@ -51,14 +51,14 @@ function runPage2() {
     //fill(0);
    // fill(0);
     push();
-    textSize(20);
+    textSize(14);
     textFont("'Nunito', sans-serif ");
   
     fill(0,0,0)
     stroke(0,0,0);
     strokeWeight(0.8);
-    text('Motor on a Foundation  as 2DOF System ',280, 50);
-    text('Forced Vibration with rotating unbalance' , 280 , 80);
+    text('Motor on a Foundation  as 2DOF System ',180, 30);
+    text('Forced Vibration with rotating unbalance' , 180 , 50);
 
     textSize(16);
     //fill(250, 114, 43);
@@ -84,9 +84,7 @@ function runPage2() {
     document.getElementById("x1st").textContent= ((spring1.x1/spring1.x2)).toFixed(2),
     // document.getElementById("x2st").textContent= abs(spring1.x1 / (spring1.F0 / spring1.k1)).toFixed(4),
 
-    // strokeWeight(0.5);   
-    // line(0, 650, 680, 650)
-    // line(300,650,300,750) 
+    
     F0 = $("#stiffnessSpinner").spinner("value");
     w = $("#massSpinner").spinner("value");
     m1 = $("#dampingSpinner").spinner("value");
@@ -100,44 +98,51 @@ function runPage2() {
 
         
     textFont("'Nunito', sans-serif ");
-    textSize(20);
+    textSize(16);
     strokeWeight(0.5);
     stroke(0,0,0);
-    text("MODE SHAPE", 395, 150);
+    text("MODE SHAPE", 255, 100);
     textSize(15);
-
-
-    
+    strokeWeight(1); 
+    stroke(0,0,0);  
+    line(200, 250, 430, 250)
+   
+    line(200, 350, 430, 350)
+    // line(300,650,300,750)
+    textSize(14);
+    fill(0);
+    text("X\u2081", 180, 255);
+    text("X\u2082", 180, 355);
 
     if(abs(spring1.w-spring1.w1)<=0.5 || abs(spring1.w - spring1.w2)<=0.5)
     {
 
-    strokeWeight(2.5);
+    strokeWeight(2);
     //stroke(0);
-    line(480,200,480,600);
+    line(300,150,300,430);
     stroke(0,0,255);
     
-    line(480,300,480+(spring1.x1*400),300);
-    line(480,500,480+(spring1.x2)*400,500);
+    line(300,250,300+(spring1.x1*400),250);
+    line(300,350,300+(spring1.x2)*400,350);
     stroke(255,0,0);
-    line(480,200,480+(spring1.x1*400),300);
-    line(480+(spring1.x1*400),300,480+(spring1.x2*400),500);
-    line(480+(spring1.x2)*400,500,480,600);
+    line(300,150,300+(spring1.x1*400),250);
+    line(300+(spring1.x1*400),250,300+(spring1.x2*400),350);
+    line(300+(spring1.x2)*400,350,300,430);
     }
     else{
     
-    strokeWeight(2.5);
+    strokeWeight(2);
     stroke(0);
-    line(480,200,480,600);
+    line(300,150,300,430);
    stroke(0,0,255);
     // console.log("the  value of x1 in spring  1 " , spring1.x1);
     // console.log("the value of  x2 in  spring 2 " , spring1.x2);
-    line(480,300,480+(spring1.x1*400),300);
-    line(480,500,480+(spring1.x2*400),500);
+    line(300,250,300+(spring1.x1*400),250);
+    line(300,350,300+(spring1.x2*400),350);
     stroke(255,0,0);
-    line(480,200,480+(spring1.x1*400),300);
-    line(480+(spring1.x1*400),300,480+(spring1.x2*400),500);
-    line(480+(spring1.x2*400),500,480,600);
+    line(300,150,300+(spring1.x1*400),250);
+    line(300+(spring1.x1*400),250,300+(spring1.x2*400),350);
+    line(300+(spring1.x2*400),350,300,430);
 
     }
 
@@ -145,14 +150,14 @@ function runPage2() {
     if(abs(spring1.w-spring1.w2)<=0.1)
     {
 
-        text("SECOND MODE SHAPE",415,180);
-        text("X1/X2 = "  + (spring1.x1/spring1.x2).toFixed(0) , 300 , 300 );
+        text("SECOND MODE SHAPE",235,120);
+        text("X1/X2 = "  + (spring1.x1/spring1.x2).toFixed(0) , 350 , 240 );
     }
 
     if(abs(spring1.w-spring1.w1)<=0.1)
     {
-        text("FIRST MODE SHAPE",415,180);
-        text("X1/X2 = "  + (spring1.x1/spring1.x2).toFixed(0) , 300 , 300 );
+        text("FIRST MODE SHAPE",235,120);
+        text("X1/X2 = "  + (spring1.x1/spring1.x2).toFixed(0) , 350 , 240 );
     }
     
 

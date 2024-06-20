@@ -9,7 +9,26 @@ em:current font size
 /* Below 1344px (Smaller Desktops) */
 /* **************************** */
 
-@media (max-width: 84em) {
+@media (max-width: 1200em) {
+  .title-div h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+.tool-menu {
+  gap: 1rem;
+  font-size: 1rem;
+}
+.logo-div {
+  width: 9.8rem;
+}
+  /* #refreshbutton{
+    margin-top: -40px;
+  } */
+  /* #titleincanvas {
+    position: absolute;
+    left: 286px;
+    top: 39px;
+  } */
 }
 
 /* **************************** */
@@ -28,7 +47,8 @@ em:current font size
     font-size: 2rem;
   }
   .tool-menu {
-    font-size: 2rem;
+    gap: 1rem;
+    font-size: 1rem;
   }
   .icons {
     width: 4rem;
@@ -51,6 +71,14 @@ em:current font size
   #variables {
     width: 100%;
   }
+  .logo-div {
+    width: 7.8rem;
+  }
+  /* #titleincanvas {
+    position: absolute;
+    left: 380px;
+    top: 47px;
+  } */
 }
 
 /* **************************** */
@@ -100,7 +128,7 @@ em:current font size
     grid-template-columns: 1fr;
   }
   .logo-div {
-    width: 6.5rem;
+    width: 7.8rem;
   }
   .icons {
     width: 3rem;
@@ -131,6 +159,12 @@ em:current font size
   .footer {
     margin-bottom: 7rem;
   }
+
+  /* #titleincanvas {
+    position: absolute;
+    left: 290px;
+    top: 41px;
+  } */
 }
 
 /* **************************** */
@@ -150,6 +184,15 @@ em:current font size
     border: none;
     border-top: 1px solid rgba(177, 176, 176, 0.855);
   }
+  .tool-menu {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  /* #titleincanvas {
+    position: absolute;
+    left: 277px;
+    top: 40px;
+  } */
 }
 
 /* **************************** */
@@ -171,7 +214,7 @@ em:current font size
     height: 0.6rem;
   }
   .logo-div {
-    width: 8.5rem;
+    width: 7.8rem;
     /* padding: 0.8rem 0 0.8rem 3.3rem; */
   }
   .main__task-div:nth-child(4) {
@@ -190,22 +233,38 @@ em:current font size
     border: none;
     border-top: 1px solid rgba(177, 176, 176, 0.855);
   }
+  .tool-menu {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  /* #titleincanvas {
+    position: absolute;
+    left: 206px;
+    top: 43px;
+  } */
 }
 
-@media (max-width: 37.5em) {
+
+@media (max-width: 34em) {
   canvas {
     width: 100%;
     height: auto;
   }
+  .tool-menu {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  /* #titleincanvas {
+    position: absolute;
+    left: 76px;
+    top: 39px;
+  } */
 }
 
 /* **************************** */
 /* Below 540px (Smaller Tablets) */
 /* **************************** */
 @media (max-width: 34em) {
-  .grid-container p {
-    width: 100%;
-}
   .title-div-container {
     padding: 0.5rem 0.5rem 0rem 0.5rem;
   }
@@ -269,6 +328,13 @@ em:current font size
     margin-top: 65px;
     margin-bottom: 30px;
   }
+  .tool-menu {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  /* #refreshbutton{
+    margin-top: -1px;
+  } */
 }
 
 @media (max-width: 27em) {
@@ -279,6 +345,9 @@ em:current font size
   .tool-list span {
     font-size: 1.3rem;
   }
+  /* #refreshbutton{
+    margin-top: -1px;
+  } */
 }
 /* 
 

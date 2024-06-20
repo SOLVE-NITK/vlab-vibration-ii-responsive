@@ -59,6 +59,7 @@
     line(250 , 75 , 270 , 75);
     strokeWeight(1);
     stroke('black')
+    strokeWeight(0);
     textSize(16);
     text('Frequency response of Disc 1' , 275 , 80);
 
@@ -68,6 +69,7 @@
     strokeWeight(5);
     line(250 , 55 , 270 , 55);
     strokeWeight(1);
+    strokeWeight(0);
     stroke('black')
     textSize(16);
     text('Frequency response of Disc 2' , 275 , 60);
@@ -77,15 +79,15 @@
     stroke('blue')
     strokeWeight(5)
     point(265 , 110)
-    strokeWeight(1)
+    strokeWeight(0)
     stroke('blue')
   //  text('w2' , 55+add ,100 +dy)
-  text('w2' , 280 ,115)
+  text('ω2' , 280 ,115)
     stroke('red')
     strokeWeight(5)
     point(265 , 135);
-    strokeWeight(1)
-    text('w1' , 280, 140)
+    strokeWeight(0)
+    text('ω1' , 280, 140)
  
     stroke('red');
     strokeWeight(8);
@@ -96,7 +98,11 @@
     point( 50+ torsional_sys.natomega2*8, 400);
     strokeWeight(1)
 
-
+    fill(0);
+    textSize(12)
+    strokeWeight(1)
+    text("j1",450,200)
+      text("j2",510,220)
  
     T0 = $("#T0Spinner").spinner("value");
     w = $("#wSpinner").spinner("value");

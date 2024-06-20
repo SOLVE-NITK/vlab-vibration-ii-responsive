@@ -53,7 +53,16 @@
     strokeWeight(0);  
     text("MODE SHAPES", 215, 20);
     // textSize(13);
-
+      strokeWeight(1); 
+    stroke(0,0,0);  
+    line(200, 200, 430, 200)
+   
+    line(200, 300, 430, 300)
+    // line(300,650,300,750)
+    textSize(16);
+    fill(0);
+    text("X\u2081", 180, 200);
+    text("X\u2082", 180, 300);
 
     
    let add = 150    ;

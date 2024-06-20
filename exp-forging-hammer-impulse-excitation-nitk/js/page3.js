@@ -40,14 +40,14 @@
     let dy = 90;
     stroke('red')
     strokeWeight(5)
-    point(50+add , 100+dy)
+    point(45+add , 100+dy)
     strokeWeight(1)
-    text('w2' , 55+add ,100 +dy)
+    text('ω\u2082' , 55+add ,100 +dy)
     stroke('purple')
     strokeWeight(5)
-    point(50+add , 120+dy);
+    point(45+add , 120+dy);
     strokeWeight(1)
-    text('w1' , 55 +add, 120+dy)
+    text('ω\u2081' , 55 +add, 120+dy)
 
 
   strokeWeight(1);

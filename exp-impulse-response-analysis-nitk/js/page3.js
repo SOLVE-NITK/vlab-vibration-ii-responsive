@@ -40,21 +40,21 @@
     let dy = 90;
     stroke('red')
     strokeWeight(5)
-    point(50+add , 100+dy)
+    point(15+add , 100+dy)
     strokeWeight(1)
-    text('w2' , 55+add ,100 +dy)
+    text('ω\u2082' , 40+add ,100 +dy)
     stroke('purple')
     strokeWeight(5)
-    point(50+add , 120+dy);
+    point(15+add , 120+dy);
     strokeWeight(1)
-    text('w1' , 55 +add, 120+dy)
+    text('ω\u2081' , 40 +add, 120+dy)
 
 
   strokeWeight(1);
     spring1.initialise( k3,k1,m1,k2,m2, x10, x20);
     spring1.update(t, factor);
 
-    stroke('blue');
+    stroke('purple');
     strokeWeight(10);
     point(40 + spring1.w1*10, 330);
 

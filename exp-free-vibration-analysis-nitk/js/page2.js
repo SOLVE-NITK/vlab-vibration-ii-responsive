@@ -10,7 +10,14 @@
     // textSize(36);
     // textFont("Comic Sans MS");
    
-
+    textFont('nunito');
+    textSize(23);
+    // fill(0);
+    // // stroke(0);
+    strokeWeight(0.5);
+    text('Detailed Results',200,50);
+    strokeWeight(1);
+    //  line(250,95,350,95);
     // textSize(16);
    let colors = color("#089b93");
     pop();
@@ -22,32 +29,32 @@
         textSize(16);
         strokeWeight(0.3);
         fill(0)
-        text('THE FIRST NATURAL FREQUENCY OF SYSTEM (ω1) : ',40,100);
+        text('THE FIRST NATURAL FREQUENCY OF SYSTEM  (ω\u2081) : ',40,100);
         fill(colors); 
         text(spring1.w1.toFixed(4) + ' rad/s', 430, 100);
     
         fill(0)
-        text('THE SECOND NATURAL FREQUENCY OF SYSTEM (ω2) : ',40,150);
+        text('THE SECOND NATURAL FREQUENCY OF SYSTEM (ω\u2082) : ',40,150);
         fill(colors); 
         text(spring1.w2.toFixed(4) + ' rad/s', 455, 150);
     
         fill(0)
-        text('THE FIRST MODE SHAPE RATIO [(X1/X2) AT ω1] : ',40,200);
+        text('THE FIRST MODE SHAPE RATIO [(X1/X2) AT ω\u2081] : ',40,200);
         fill(colors); 
         text(spring1.ar1.toFixed(4), 410, 200);
     
         fill(0)
-        text('THE SECOND MODE SHAPE RATIO [(X1/X2) AT ω2] : ',40,250);
+        text('THE SECOND MODE SHAPE RATIO [(X1/X2) AT ω\u2082] : ',40,250);
         fill(colors); 
         text(spring1.ar2.toFixed(4), 425, 250);
     
         if(spring1.x1==spring1.x2){
           fill(0)
-        text('THE EQUATION OF MOTION OF M1 : ',40,300);
+        text('THE EQUATION OF MOTION OF M\u2081 : ',40,300);
         fill(colors); 
         text(spring1.ar1.toFixed(4) * spring1.x2.toFixed(4)+' cos('+spring1.w1.toFixed(4)+'t)',320,300)
         fill(0)
-        text('THE EQUATION OF MOTION OF M2 : ',40,350);
+        text('THE EQUATION OF MOTION OF M\u2082 : ',40,350);
         fill(colors);
         text(+spring1.x2.toFixed(2)+' cos('+spring1.w2.toFixed(4)+'t)',320,350)
         }
@@ -56,11 +63,11 @@
       
           textSize(14);
           fill(0);
-            text('THE EQUATION OF MOTION OF M1: ',40,300);
+            text('THE EQUATION OF MOTION OF M\u2081: ',40,300);
             fill(colors);
             text((spring1.ar2.toFixed(4)) * (spring1.x2.toFixed(4))+' cos('+spring1.w1.toFixed(4)+'t)',280,300);
             fill(0);
-            text('THE EQUATION OF MOTION OF M2: ',40,350);
+            text('THE EQUATION OF MOTION OF M\u2082: ',40,350);
             fill(colors);
             text(spring1.x2.toFixed(2)+' cos('+spring1.w2.toFixed(4)+'t)',280,350);
          
@@ -69,11 +76,11 @@
         else{
           textSize(14);
           fill(0);
-            text('THE EQUATION OF MOTION OF M1: ',40,300);
+            text('THE EQUATION OF MOTION OF M\u2081: ',40,300);
             fill(colors);
             text((spring1.x1d.toFixed(4))+' cos('+spring1.w1.toFixed(4)+'t) + ('+(spring1.x1dd.toFixed(4))+') cos('+spring1.w2.toFixed(4)+'t)',280,300);
             fill(0);
-            text('THE EQUATION OF MOTION OF M2: ',40,350);
+            text('THE EQUATION OF MOTION OF M\u2082: ',40,350);
             fill(colors);
             text((spring1.x2d.toFixed(4))+' cos('+spring1.w1.toFixed(4)+'t) + ('+(spring1.x2dd.toFixed(4))+') cos('+spring1.w2.toFixed(4)+'t)',280,350);
         }
@@ -81,56 +88,60 @@
         textSize(13);
         strokeWeight(0.4);
         fill(0)
-        text('THE FIRST NATURAL FREQUENCY OF SYSTEM (ω1) : ',40,100);
+        text('THE FIRST NATURAL FREQUENCY OF SYSTEM (ω\u2081) : ',40,100);
         fill(colors); 
         text(spring1.w1.toFixed(4) + ' rad/s', 360, 100);
     
         fill(0)
-        text('THE SECOND NATURAL FREQUENCY OF SYSTEM (ω2) : ',40,150);
+        text('THE SECOND NATURAL FREQUENCY OF SYSTEM (ω\u2082) : ',40,150);
         fill(colors); 
         text(spring1.w2.toFixed(4) + ' rad/s', 375, 150);
     
         fill(0)
-        text('THE FIRST MODE SHAPE RATIO [(X1/X2) AT ω1] : ',40,200);
+        text('THE FIRST MODE SHAPE RATIO [(X1/X2) AT ω\u2081] : ',40,200);
         fill(colors); 
         text(spring1.ar1.toFixed(4), 340, 200);
     
         fill(0)
-        text('THE SECOND MODE SHAPE RATIO [(X1/X2) AT ω2] : ',40,250);
+        text('THE SECOND MODE SHAPE RATIO [(X1/X2) AT ω\u2082] : ',40,250);
         fill(colors); 
         text(spring1.ar2.toFixed(4), 355, 250);
     
         if(spring1.x1==spring1.x2){
           fill(0)
-        text('THE EQUATION OF MOTION OF M1 : ',40,300);
+        text('THE EQUATION OF MOTION OF M\u2081 : ',40,300);
         fill(colors); 
         text(spring1.ar1.toFixed(4) * spring1.x2.toFixed(4)+' cos('+spring1.w1.toFixed(4)+'t)',270,300)
         fill(0)
-        text('THE EQUATION OF MOTION OF M2 : ',40,350);
+        text('THE EQUATION OF MOTION OF M\u2082 : ',40,350);
         fill(colors);
         text(+spring1.x2.toFixed(2)+' cos('+spring1.w2.toFixed(4)+'t)',270,350)
+     
         }
     
         else if(spring1.x1==-(spring1.x2)){
           fill(0);
-            text('THE EQUATION OF MOTION OF M1: ',40,300);
+            text('THE EQUATION OF MOTION OF M\u2081: ',40,300);
             fill(colors);
             text((spring1.ar2.toFixed(4)) * (spring1.x2.toFixed(4))+' cos('+spring1.w1.toFixed(4)+'t)',270,300);
             fill(0);
-            text('THE EQUATION OF MOTION OF M2: ',40,350);
+            text('THE EQUATION OF MOTION OF M\u2082: ',40,350);
             fill(colors);
             text(spring1.x2.toFixed(2)+' cos('+spring1.w2.toFixed(4)+'t)',270,350);
         
         }
         else{
           fill(0);
-            text('THE EQUATION OF MOTION OF M1: ',40,300);
+            text('THE EQUATION OF MOTION OF M\u2081: ',40,300);
             fill(colors);
             text((spring1.x1d.toFixed(4))+' cos('+spring1.w1.toFixed(4)+'t) + ('+(spring1.x1dd.toFixed(4))+') cos('+spring1.w2.toFixed(4)+'t)',270,300);
+            
             fill(0);
-            text('THE EQUATION OF MOTION OF M2: ',40,350);
+            text('THE EQUATION OF MOTION OF M\u2082: ',40,350);
             fill(colors);
+           
             text((spring1.x2d.toFixed(4))+' cos('+spring1.w1.toFixed(4)+'t) + ('+(spring1.x2dd.toFixed(4))+') cos('+spring1.w2.toFixed(4)+'t)',270,350);
+          
         }
       }
     }

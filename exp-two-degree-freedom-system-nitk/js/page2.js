@@ -20,34 +20,49 @@
   // text("VARIABLES", 655, 107);
   // pop();
 
+
+  // textSize(10);
+  // text(
+  //   "Detailed Results" +
+  //     spring1.w1.toFixed(4) +
+  //     " rad/s",
+  //   30,
+  //   40
+  // );
+
+  textFont("'Nunito', sans-serif");
+  textSize(17.5);
+  stroke("black");
+  text("Detailed Results", 240, 30);
+
   textFont("'Nunito', sans-serif");
   textSize(14.5);
 
   strokeWeight(0.7);
-  // textSize(10);
+
   text(
-    "The first natural frequency of the system (ω1) : " +
+    "The first natural frequency of the system (ω\u2081) : " +
       spring1.w1.toFixed(4) +
       " rad/s",
     30,
-    80
+    100
   );
   text(
-    "The second natural frequency of the system (ω2) : " +
+    "The second natural frequency of the system (ω\u2082) : " +
       spring1.w2.toFixed(4) +
       " rad/s",
     30,
-    130
+    150
   );
   text(
-    "The first mode shape ratio [(X1/X2) AT ω1] : " + spring1.ar1.toFixed(4),
+    "The first mode shape ratio [(X\u2081/X\u2082) AT ω\u2081] : " + spring1.ar1.toFixed(4),
     30,
-    180
+    200
   );
   text(
-    "The second mode shape ratio [(X1/X2) AT ω2] : " + spring1.ar2.toFixed(4),
+    "The second mode shape ratio [(X\u2081/X\u2082) AT ω\u2082] : " + spring1.ar2.toFixed(4),
     30,
-    230
+    250
   );
 
   // console.log(spring1.x2.toFixed(2));
@@ -56,47 +71,47 @@
     // text('THE EQUATION OF MOTION OF M1 : '+spring1.ar1.toFixed(4) * spring1.x2.toFixed(4)+' cos('+spring1.w1.toFixed(4)+'t)',30,280);
     // text('THE EQUATION OF MOTION OF M2 : '+spring1.x2.toFixed(2)+' cos('+spring1.w2.toFixed(4)+'t)',30,330);
     text(
-      "The Equation of motion of M1 : " +
+      "The Equation of motion of M\u2081 : " +
         spring1.ar1.toFixed(4) * spring1.x2.toFixed(4) +
         " cos(" +
         spring1.w1.toFixed(4) +
         "t)",
       30,
-      280
+      300
     );
     text(
-      "The Equation of motion of M2 : " +
+      "The Equation of motion of M\u2082 : " +
         spring1.x2.toFixed(2) +
         " cos(" +
         spring1.w2.toFixed(4) +
         "t)",
       30,
-      330
+      350
     );
   } else if (spring1.x1 == -spring1.x2) {
     // console.log(spring1.x1);
 
     text(
-      "The Equation of motion of M1: " +
+      "The Equation of motion of M\u2081: " +
         spring1.ar2.toFixed(4) * spring1.x2.toFixed(4) +
         " cos(" +
         spring1.w1.toFixed(4) +
         "t)",
       30,
-      280
+      300
     );
     text(
-      "The Equation of motion of M2: " +
+      "The Equation of motion of M\u2082: " +
         spring1.x2.toFixed(2) +
         " cos(" +
         spring1.w2.toFixed(4) +
         "t)",
       30,
-      330
+      350
     );
   } else {
     text(
-      "The Equation of motion of M1: " +
+      "The Equation of motion of M\u2081: " +
         spring1.x1d.toFixed(4) +
         " cos(" +
         spring1.w1.toFixed(4) +
@@ -106,10 +121,10 @@
         spring1.w2.toFixed(4) +
         "t)",
       30,
-      280
+      300
     );
     text(
-      "The Equation of motion of M2: " +
+      "The Equation of motion of M\u2082: " +
         spring1.x2d.toFixed(4) +
         " cos(" +
         spring1.w1.toFixed(4) +
@@ -119,7 +134,7 @@
         spring1.w2.toFixed(4) +
         "t)",
       30,
-      330
+      350
     );
   }
 

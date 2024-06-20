@@ -62,7 +62,7 @@ function preload() {
 
 function setup() {
     // textFont("Comic Sans MS");
-    var sketchCanvas = createCanvas(600, 450);
+    var sketchCanvas = createCanvas(850, 500);
     sketchCanvas.parent("canvas-container");
     
     // createCanvas(width+ 100, height+180);
@@ -77,10 +77,10 @@ function setup() {
 
     position_graph3 = new Graph(50, 380, 100, 220, "x1", "t");
 
-    magFac1 = new DynamicGraph(50+20+50, 400+10, 250, 220, "X1/Xst", "ω", 0,7,0,10, System.mag_func1 , 255);
+    magFac1 = new DynamicGraph(50+20+50, 300+10, 250, 220, "X1/Xst", "ω", 0,7,0,10, System.mag_func1 , 255);
     magFac2 = new DynamicGraph(400, 400+50, 300, 220, "X2/Xst", "ω",0, 7,0,10, System.mag_func2,0);
     magFac3 = new DynamicGraph(50+20, 400+50, 300, 220, "X1/Xst", "ω",0, 7,0,10, System.mag_func3,0);
-    magFac4 = new DynamicGraph(50+20+50, 400+10, 250, 220, "X1/Xst", "ω", 0,7,0,10, System.mag_func4 , 0);
+    magFac4 = new DynamicGraph(50+20+50, 300+10, 250, 220, "X1/Xst", "ω", 0,7,0,10, System.mag_func4 , 0);
 
 
     //magFac = new DynamicGraph(125, 325, 230, 290, "Magnification Factor", "n", 0, 2.5, 0, 7.5, System.mag_func);
@@ -135,11 +135,19 @@ function simstate() {
       animation = false;
       document.getElementById("playpausebutton").src = "images/blueplaydull.svg";
       document.querySelector(".playPause").textContent = "Play";
+      $('#graphbutton').css({
+        "opacity": 0.5,
+        "pointer-events": "none"
+      });
     } else {
       loop();
       animation = true;
       document.getElementById("playpausebutton").src = "images/bluepausedull.svg";
       document.querySelector(".playPause").textContent = "Pause";
+      $('#graphbutton').css({
+        "opacity": 1,
+        "pointer-events": "auto"
+      });
     }
   }
 

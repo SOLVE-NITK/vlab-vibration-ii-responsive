@@ -3,11 +3,11 @@
 <div style="text-align:left">
   Click on the Simulation icon <img src="images/simulation.png" alt="Alt text" style="height:80px; width:80px;">  to view the simulation. 
 
-   ![Alt text](images\vibration2pd.png)
+   ![Alt text](images\Screen1.png)
    
    In order to view the variable section click on the Variable icon. <img src="images/var1.png" alt="Alt text" style="height:80px; width:80px;">
 
-   ![Alt text](images/variable1.png)
+   ![Alt text](images/variable11.png)
 
    Click on Play icon <img src="images/play1.png" alt="Alt text" style="height:80px; width:80px;"> to run the simulation and click on Pause icon <img src="images/pause.png" alt="Alt text" style="height:80px; width:80px;"> to stop it.
 
@@ -19,5 +19,5 @@
 
    ![Alt text](images/vibrationlastscreen.png)
 click on the result icon to view the result.<img src="images/result.png" alt="Alt text" style="height:80px; width:80px;"> 
-![Alt text](images/results2.png)
+![Alt text](images/Result2.png)
 </div>

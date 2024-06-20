@@ -32,6 +32,7 @@ function runPage0() {
     textFont("nunito")
     fill(0,0,0);
     // stroke(0,0,0);
+
     text('Fig 1. A motorcycle with rider', 80, 400);
     text('(a)', 180, 420);
     text('(b)', 475, 420);
@@ -77,7 +78,17 @@ function runPage0() {
     text("2 DOF system", 390, 540);
 
 
-
+textFont('Nunito')
+textSize(26);
+fill(0);
+stroke(0);
+strokeWeight(0.5);
+text('Diagram',250,90)
+strokeWeight(1);
+ line(250,95,350,95);
+// $('#Results').html("description");
+document.getElementById("taskResult").innerHTML= "Description";
+document.getElementById("taskResult1").innerHTML= "Description";
     function adjustCommentsWidth() {
         if ($(window).width() < 944) {
           $('#Results').css('width', '100%');

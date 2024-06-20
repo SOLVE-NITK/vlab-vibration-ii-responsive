@@ -85,12 +85,12 @@ function setup() {
   //   );
   var sketchCanvas = createCanvas(600, 450);
   sketchCanvas.parent("canvas-container");
-
+    
   spring1 = new System(450, 365, 90, 25);
 
-  position_graph1 = new Graph(50, 295, 100, 220, "x1", "t");
+  position_graph1 = new Graph(50, 295, 100, 220, "x\u2081", "t");
 
-  position_graph2 = new Graph(50, 210, 100, 220, "x2", "t");
+  position_graph2 = new Graph(50, 210, 100, 220, "x\u2082", "t");
 
   magFac1 = new DynamicGraph(
     70,
@@ -104,7 +104,7 @@ function setup() {
     0,
     10,
     System.mag_func1,
-    0
+    [255, 0, 0]
   );
   magFac2 = new DynamicGraph(
     70,
@@ -118,7 +118,7 @@ function setup() {
     0,
     10,
     System.mag_func2,
-    255
+    [255, 23, 253] 
   );
 
   //magFac = new DynamicGraph(125, 325, 230, 290, "Magnification Factor", "n", 0, 2.5, 0, 7.5, System.mag_func);
@@ -201,13 +201,13 @@ function simstate() {
     document.getElementById("playpausebutton").src = "images/blueplaydull.svg";
     document.querySelector(".playPause").textContent = "Play";
     nextButton.onclick = null; // Disable the next button
-    nextButton.style.cursor = "not-allowed"; // Update the cursor to indicate it's not clickable
+    // nextButton.style.cursor = "not-allowed"; // Update the cursor to indicate it's not clickable
     nextButton.classList.add('disabled'); // Add any disabled styles if needed
     forwardButton.onclick = null;
-    forwardButton.style.cursor = "not-allowed"; // Update the cursor to indicate it's not clickable
+    // forwardButton.style.cursor = "not-allowed"; // Update the cursor to indicate it's not clickable
     forwardButton.classList.add('disabled'); // Add any disabled styles if needed
     previuousButton.onclick = null;
-    previuousButton.style.cursor = "not-allowed"; // Update the cursor to indicate it's not clickable
+    // previuousButton.style.cursor = "not-allowed"; // Update the cursor to indicate it's not clickable
     previuousButton.classList.add('disabled'); // Add any disabled styles if needed
     
     
@@ -239,6 +239,12 @@ function graphPlot() {
 
   document.querySelector(".graph-div span").textContent = "Prev/Next";
   document.querySelector(".graph-button").style.display = "none";
+  var newBtn =document.getElementById("playpausebutton");
+  
+  newBtn.onclick=simstate;
+  // newBtn.style.cursor="not-allowed";
+  newBtn.classList.add("disabled");
+
   // document.querySelector("#titleincanvas").style.display = "none";
 
   screenchangePhase();
@@ -336,6 +342,7 @@ function screenChangePrevious() {
     page2 = true;
     page3 = false;
     page4 = false;
+    
 
     document.querySelector(".graph-div span").textContent = "Prev/Next";
   } else {
@@ -353,6 +360,18 @@ function screenChangePrevious() {
     document.querySelector(".graph-button span").textContent = "Next";
     //  document.querySelector(".graph-button").classList.remove("display-hide");
     document.querySelector(".graph-div").classList.add("display-hide");
+
+    // if (page1 === true) {
+    //   document.getElementById("playpausebutton").classList.remove("disabled");
+    //   document.getElementById("playpausebutton").style.cursor = "pointer";
+    //   document.getElementById("playpausebutton").onclick = simstate;
+    // }
+    if(page1 === true){
+       document.getElementById("playpausebutton").classList.remove("disabled");
+      document.getElementById("playpause").onclick=simstate;
+      document.getElementById("playpause").style.cursor="pointer";
+     
+    }
     // document.querySelector("#titleincanvas").style.display = "block";
   }
 }

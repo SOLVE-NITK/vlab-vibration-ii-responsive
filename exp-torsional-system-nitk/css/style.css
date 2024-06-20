@@ -21,6 +21,7 @@
   border-radius: 1rem;
   z-index: 105;
   position: relative;
+  text-align: center;
 }
 
 .logo-div {
@@ -329,7 +330,7 @@ h1 {
   padding: 1rem 1rem 2rem 1rem;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+
   row-gap: 1rem;
 }
 .var-div {
@@ -391,15 +392,27 @@ h1 {
 #cleargraph :active {
   background-color: #ccc;
 }
-.grid-container1 {
-  display: flex;
-  flex-wrap: wrap;
+
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
 }
 
-.grid-container1 p {
+.grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+/* .grid-container1 {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* .grid-container1 p {
   width: 50%;
   /* box-sizing: border-box; */
-  padding: 10px;
+  /* padding: 10px; */
   /* border: 1px solid #ccc; */
-}
+/* } */ 
 

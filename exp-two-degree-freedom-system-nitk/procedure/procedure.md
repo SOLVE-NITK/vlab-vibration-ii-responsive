@@ -19,7 +19,8 @@
 
    Click on the Next or Prev icon<img src="images/prenex.png" alt="Alt text" style="height:80px; width:80px;"> to cycle through different pages. 
   ![Alt text](images/screen1.png)
-
+  
+ 
   
    ![Alt text](images/screen2.png)
    

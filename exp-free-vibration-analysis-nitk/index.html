@@ -212,7 +212,7 @@ jquery.ui.touch-punch.min.js"
                 />
               </svg></a
               >
-              <span >Results</span>
+              <span id="taskResult1" >Results</span>
           
           </li>
           
@@ -264,7 +264,7 @@ jquery.ui.touch-punch.min.js"
               <div id="canvas-container">
                 <!-- <canvas id="simscreen" height="400px" width="550px"></canvas> -->
               </div>
-              <button id="cleargraph" onclick="clearMe()" ontouchstart="clearMe()">Clear graph</button>           
+              <!-- <button id="cleargraph" onclick="clearMe()" ontouchstart="clearMe()">Clear graph</button>            -->
               <div id="titleincanvas"></div>
               <div id="datatable1"></div>
               <div id="datatable2"></div>
@@ -281,11 +281,12 @@ jquery.ui.touch-punch.min.js"
               <div class="variables-sections">
                 <div class="var-div">
                   <div class="input-container">
-                    <label for="Xo1Spinner">Xo1</label>
+                    <label for="Xo1Spinner">X<sub>o1</sub></label>
                     <input
                       class="var-spinner"
                       id="Xo1Spinner"
                       name="value"
+                      type="number"
                     
                     />
                     <span>m</span>
@@ -294,8 +295,8 @@ jquery.ui.touch-punch.min.js"
                 </div>
                 <div class="var-div">
                   <div class="input-container">
-                    <label for="Xo2Spinner">Xo2</label>
-                    <input class="var-spinner" id="Xo2Spinner" name="value" />
+                    <label for="Xo2Spinner">X<sub>o2</sub></label>
+                    <input class="var-spinner" type="number" id="Xo2Spinner" name="value" />
                     <span>m</span>
                   </div>
                   <div class="var-slider" id="Xo2Slider"></div>
@@ -303,26 +304,28 @@ jquery.ui.touch-punch.min.js"
                 <div class="var-div">
                   <div class="input-container">
                     <label for="k1Spinner"
-                      >k1</label
+                      >k<sub>1</sub></label
                     >
                     <input
                       class="var-spinner"
                       id="k1Spinner"
                       name="value"
+                      type="number"
                     />
-                    <span>(N/m)</span>
+                    <span>N/m</span>
                   </div>
                   <div class="var-slider" id="k1Slider"></div>
                 </div>
                 <div class="var-div">
                   <div class="input-container">
                     <label for="m1Spinner"
-                      >m1</label
+                      >m<sub>1</sub></label
                     >
                     <input
                       class="var-spinner"
                       id="m1Spinner"
                       name="value"
+                      type="number"
                     />
                     <span>kg</span>
                   </div>
@@ -331,12 +334,13 @@ jquery.ui.touch-punch.min.js"
                 <div class="var-div">
                   <div class="input-container">
                     <label for="k2Spinner"
-                      >k2</label
+                      >k<sub>2</sub></label
                     >
                     <input
                       class="var-spinner"
                       id="k2Spinner"
                       name="value"
+                      type="number"
                      ontouchstart=""
                     />
                     <span>N/m</span>
@@ -346,12 +350,13 @@ jquery.ui.touch-punch.min.js"
                 <div class="var-div">
                   <div class="input-container">
                     <label for="m2Spinner"
-                      >m2</label
+                      >m<sub>2</sub></label
                     >
                     <input
                       class="var-spinner"
                       id="m2Spinner"
                       name="value"
+                      type="number"
                      ontouchstart=""
                     />
                     <span>kg</span>
@@ -362,7 +367,7 @@ jquery.ui.touch-punch.min.js"
             </div>
           </div>
           <div id="Results" class="main__task-div">
-            <h3 class="task-title">Results</h3>
+            <h3 id="taskResult" class="task-title">Results</h3>
             <div class="settings-sections">
               <div class="comment-sections">
                 <p id="p1">m<sub>v</sub> = is the mass of the vehicle </p>
@@ -372,8 +377,8 @@ jquery.ui.touch-punch.min.js"
                 <p id="p5">(a) A Physical Model</p>
                 <p id="p6">(b)Mathematical Model as 2 DOF System</p>
 
-                <p id="p7">ω1 =  <span id="w1"></span></p>
-                <p id="p8">ω2 =  <span id="w2"></span></p>
+                <p id="p7">ω<sub>1</sub> =  <span id="w1"></span></p>
+                <p id="p8">ω<sub>2</sub> =  <span id="w2"></span></p>
                 <p id="p9">Mode 1 =  <span id="m1"></span></p>
                 <p id="p10">Mode 2 =<span id="m2"></span></p>
               </div>
