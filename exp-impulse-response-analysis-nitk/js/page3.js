@@ -42,11 +42,13 @@
     strokeWeight(5)
     point(15+add , 100+dy)
     strokeWeight(1)
+    fill('red')
     text('ω\u2082' , 40+add ,100 +dy)
     stroke('purple')
     strokeWeight(5)
     point(15+add , 120+dy);
     strokeWeight(1)
+    fill('purple')
     text('ω\u2081' , 40 +add, 120+dy)
 
 

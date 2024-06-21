@@ -42,12 +42,12 @@
     strokeWeight(3)
     point(50+add , 100+dy)
     strokeWeight(0)
-    text('w2' , 55+add ,100 +dy)
+    text('ω2' , 55+add ,100 +dy)
     stroke('purple')
     strokeWeight(3)
     point(50+add , 120+dy);
     strokeWeight(0)
-    text('w1' , 55 +add, 120+dy)
+    text('ω1' , 55 +add, 120+dy)
 
 
   strokeWeight(1);

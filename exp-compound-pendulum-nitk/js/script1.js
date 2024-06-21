@@ -1,9 +1,6 @@
-// let F0, w, k1, m1, k2, m2;
-// let width, height;
-function startsim() {
-  console.log(1);
 
-  // simTimeId = setInterval("time=time+0.1; varupdate(); ", "100");
+function startsim() {
+  console.log(1); 
 }
 
 // switches state of simulation between 0:Playing & 1:Paused
@@ -167,19 +164,3 @@ function varupdate() {
   m2 = $("#m2Spinner").spinner("value");
 
 }
-
-
-
-// function validatePositiveInput(inputId) {
-//   const value = $(inputId).spinner("value");
-//   if (value <= 0 || isNaN(value)) {
-//     // If value is zero, negative, or NaN, set the value to a default value
-//     $(inputId).spinner("value", 1); // You can change 1 to any default value you prefer
-//   }
-// }
-
-// function varupdate() {
-  
-
-  
-// }

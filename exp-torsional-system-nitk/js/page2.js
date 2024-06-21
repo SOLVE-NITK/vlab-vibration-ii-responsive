@@ -82,12 +82,12 @@
     strokeWeight(0)
     stroke('blue')
   //  text('w2' , 55+add ,100 +dy)
-  text('ω2' , 280 ,115)
+  text('ω\u2082' , 280 ,115)
     stroke('red')
     strokeWeight(5)
     point(265 , 135);
     strokeWeight(0)
-    text('ω1' , 280, 140)
+    text('ω\u2081' , 280, 140)
  
     stroke('red');
     strokeWeight(8);
@@ -98,9 +98,11 @@
     point( 50+ torsional_sys.natomega2*8, 400);
     strokeWeight(1)
 
-    fill(0);
+  
     textSize(12)
     strokeWeight(1)
+    fill(0);
+    stroke(0);
     text("j1",450,200)
       text("j2",510,220)
  

@@ -162,7 +162,7 @@ function simstate() {
   
   function screenchangePhase() {
     // document.getElementById("cleargraph").style.visibility = "visible";
-  console.log("hellonextpage");
+
     phaseAngleGraph();
   }
   function screenChangePrevious() {

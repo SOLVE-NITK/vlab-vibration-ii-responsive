@@ -37,6 +37,23 @@ function runPage1() {
   k2 = $("#k2Spinner").spinner("value");
   m2 = $("#m2Spinner").spinner("value");
 
+  if(spring1.x1d.toFixed(4) <-60 || spring1.x2d.toFixed(4) < -60){
+    textFont("nunito");
+  textSize(11);
+  stroke(0);
+  strokeWeight(0.5);
+  text("Warning:The solution goes out of bounds as it's reaching the resonance.", 100, 440);
+
+  }
+  if(spring1.x1dd.toFixed(4) < -100 || spring1.x2dd.toFixed(4) < -100){
+    textFont("nunito");
+  textSize(11);
+  stroke(0);
+  strokeWeight(0.5);
+  text("Warning:The solution goes out of bounds as it's reaching the resonance.", 100, 440);
+
+  }
+
   spring1.initialise(F0, w, k1, m1, k2, m2);
   spring1.update(t, factor);
   spring1.show(0, 1, 0);

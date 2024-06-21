@@ -368,8 +368,8 @@ function screenChangePrevious() {
     // }
     if(page1 === true){
        document.getElementById("playpausebutton").classList.remove("disabled");
-      document.getElementById("playpause").onclick=simstate;
-      document.getElementById("playpause").style.cursor="pointer";
+      // document.getElementById("playpause").onclick=simstate;
+      // document.getElementById("playpause").style.cursor="pointer";
      
     }
     // document.querySelector("#titleincanvas").style.display = "block";

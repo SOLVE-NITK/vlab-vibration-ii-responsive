@@ -65,16 +65,21 @@ function runPage4() {
 
   let add = 330;
   let dy = 250;
+  text("ω\u2082", 55 + add, 100 + dy);
+  
+  text("ω\u2081", 55 + add, 120 + dy);
+  
   stroke("red");
   strokeWeight(5);
   point(35 + add, 100 + dy);
   strokeWeight(1);
-  text("ω\u2082", 55 + add, 100 + dy);
+  
+ 
   stroke("blue");
   strokeWeight(5);
   point(35 + add, 120 + dy);
   strokeWeight(1);
-  text("ω\u2081", 55 + add, 120 + dy);
+  
 
   stroke("blue");
   strokeWeight(10);

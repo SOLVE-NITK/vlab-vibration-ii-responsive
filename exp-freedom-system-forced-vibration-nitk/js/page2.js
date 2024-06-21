@@ -94,7 +94,7 @@ function runPage2() {
     spring1.initialise(F0,w,m1,k1,m2 , k2);
     spring1.update(t,factor)
     
-   
+    var sketchCanvas;
 
         
     textFont("'Nunito', sans-serif ");
@@ -124,10 +124,22 @@ function runPage2() {
     
     line(300,250,300+(spring1.x1*400),250);
     line(300,350,300+(spring1.x2)*400,350);
+    console.log(spring1.x1*400);
+
     stroke(255,0,0);
     line(300,150,300+(spring1.x1*400),250);
     line(300+(spring1.x1*400),250,300+(spring1.x2*400),350);
     line(300+(spring1.x2)*400,350,300,430);
+    
+    if((spring1.x1*400)< -300 ||(spring1.x1*400)>300||(spring1.x2*400) < -300 ||(spring1.x2*400) > 300){
+        // fill(0);
+        console.log(spring1.x1);
+        textSize(10);
+        strokeWeight(0.8); 
+        stroke(0,0,0);  
+        text("Warning: The solution goes out of bounds as it's reaching the resonance",125,444);
+    }
+
     }
     else{
     
@@ -143,21 +155,35 @@ function runPage2() {
     line(300,150,300+(spring1.x1*400),250);
     line(300+(spring1.x1*400),250,300+(spring1.x2*400),350);
     line(300+(spring1.x2*400),350,300,430);
-
+    if((spring1.x1*400)< -300 ||(spring1.x1*400)>300||(spring1.x2*400) < -300 ||(spring1.x2*400) > 300){
+        // fill(0);
+        console.log(spring1.x1);
+        textSize(10);
+        strokeWeight(0.8); 
+        stroke(0,0,0);  
+        text("Warning: The solution goes out of bounds as it's reaching the resonance",125,444);
+    }
     }
 
    
     if(abs(spring1.w-spring1.w2)<=0.1)
     {
-
-        text("SECOND MODE SHAPE",235,120);
-        text("X1/X2 = "  + (spring1.x1/spring1.x2).toFixed(0) , 350 , 240 );
+        strokeWeight(0.8);
+        textSize(10);
+        stroke(0,0,0); 
+        fill('black');
+        text("SECOND MODE SHAPE",260,120);
+        text("X\u2081/X\u2082 = "  + (spring1.x1/spring1.x2).toFixed(0) , 350 , 240 );
     }
 
     if(abs(spring1.w-spring1.w1)<=0.1)
     {
-        text("FIRST MODE SHAPE",235,120);
-        text("X1/X2 = "  + (spring1.x1/spring1.x2).toFixed(0) , 350 , 240 );
+        strokeWeight(0.8);
+        textSize(10);
+        stroke(0,0,0);
+        fill('black'); 
+        text("FIRST MODE SHAPE",260,120);
+        text("X\u2081/X\u2082 = "  + (spring1.x1/spring1.x2).toFixed(0) , 350 , 240 );
     }
     
 

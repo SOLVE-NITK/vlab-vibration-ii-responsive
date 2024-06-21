@@ -141,10 +141,7 @@ function varchange() {
   });
  
 
-  // $("#frequencySpinner").on("touchstart", function (e) {
-  //   // Your touch event logic here
-  //   varchange();
-  // });
+ 
   varupdate();
 }
 
@@ -178,9 +175,4 @@ function varupdate() {
 
 
 
-  // width = document.querySelector("#canvas-container").width;
-  // height = document.querySelector("#canvas-container").height;
-  // document.querySelector("#mass").innerHTML =  .toFixed(4) + " rad/s"; //Displaying values
-  // document.querySelector("#k").innerHTML = η.toFixed(4);
-  // document.querySelector("#c").innerHTML = z.toFixed(4);
 }

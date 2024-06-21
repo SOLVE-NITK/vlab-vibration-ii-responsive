@@ -82,7 +82,22 @@ function runPage1() {
   m1= $("#m1Spinner").spinner("value");
   k2= $("#k2Spinner").spinner("value");
   m2= $("#m2Spinner").spinner("value");
+  if(spring1.x1d.toFixed(4) <-60 || spring1.x2d.toFixed(4) < -60){
+    textFont("nunito");
+  textSize(11);
+  stroke(0);
+  strokeWeight(0.5);
+  text("Warning:The solution goes out of bounds as it's reaching the resonance.", 100, 440);
 
+  }
+  if(spring1.x1dd.toFixed(4) < -100 || spring1.x2dd.toFixed(4) < -100){
+    textFont("nunito");
+  textSize(11);
+  stroke(0);
+  strokeWeight(0.5);
+  text("Warning:The solution goes out of bounds as it's reaching the resonance.", 100, 440);
+
+  }
   document.getElementById("taskResult").innerHTML= "Result";
   document.getElementById("taskResult1").innerHTML= "Result";
 

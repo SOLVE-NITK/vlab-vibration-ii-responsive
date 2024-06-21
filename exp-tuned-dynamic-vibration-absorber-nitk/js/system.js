@@ -70,8 +70,8 @@ class System {
     this.om1w1 = Math.pow(this.om1w1 , 0.5);
     this.om2w2 = (this.term1a - Math.pow(this.term2b,0.5))/(this.term3c);
     this.om2w2 = Math.pow(this.om2w2 , 0.5);
-    console.log("the value of om1" , this.om1);
-    console.log("the value of om2" , this.om2);
+    // console.log("the value of om1" , this.om1);
+    // console.log("the value of om2" , this.om2);
     
     
   }

@@ -8,7 +8,7 @@ function runPage1() {
   push();
   textSize(16);
   textFont("'Nunito', sans-serif;");
- 
+  strokeWeight(0)
   text('Free Vibration System',210, 30);
   pop();
 

@@ -9,13 +9,8 @@
   strokeWeight(3);
     textSize(36);
     textFont("Times");
-  // textSize(36);
-  // textFont("Times");
-  // text("TWO DEGREE OF FREEDOM SYSTEM", 100, 40);
-
-  textSize(16);
-  // text("CONTROLS", 655, 417);
-  // text("VARIABLES", 655, 107);
+    textSize(16);
+ 
   pop();
   textSize(15);
   text('X\u2081',20,265);

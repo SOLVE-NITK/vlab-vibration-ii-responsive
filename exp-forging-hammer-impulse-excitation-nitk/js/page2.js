@@ -17,11 +17,11 @@
     stroke(0);
     line(300,200,300,500);
     stroke(0,0,255);
-    line(300,260,300+(spring1.x2*2),260);
-    line(300,380,300+(spring1.x2*2),380);
+    line(300,300,300+(spring1.x2*2),300);
+    line(300,400,300+(spring1.x2*2),400);
     stroke(255,0,0);
-    line(300,78,300+(spring1.x2*2),260);
-    line(300+(spring1.x2*2),260,300+(spring1.x2*2),380);
+    line(300,200,300+(spring1.x2*2),300);
+    line(300+(spring1.x2*2),300,300+(spring1.x2*2),400);
     line(300+(spring1.x2*2),400,300,500);
 
     }
@@ -55,27 +55,27 @@
     // textSize(13);
       strokeWeight(1); 
     stroke(0,0,0);  
-    line(200, 200, 430, 200)
+    line(150, 200, 530, 200)
    
-    line(200, 300, 430, 300)
+    line(150, 300, 530, 300)
     // line(300,650,300,750)
     textSize(16);
     fill(0);
-    text("X\u2081", 180, 200);
-    text("X\u2082", 180, 300);
+    text("X\u2081", 130, 200);
+    text("X\u2082", 130, 300);
 
     
-   let add = 150    ;
+    let add = 200;
     strokeWeight(3);
     stroke(0);
-    line(120+add,90,120+add,400);
-    stroke(0,0,255);
-    line(120+add,200,120+(spring1.x1*2)+add,200); // blue
-    line(120+add,300,120+(spring1.x2*2)+add,300);
-    stroke(255,0,0);
-    line(120+add,90,120+(spring1.x1*2)+add,200);
-    line(120+(spring1.x1*2)+add,200,120+(spring1.x2*2)+add,300);
-    line(120+(spring1.x2*2)+add,300,120+add,400);
+    line(120 + add, 100, 120 + add, 400); // y-coordinates reduced by 100
+    stroke(0, 0, 255);
+    line(120 + add, 200, 120 + (spring1.x1 * 5) + add, 200); // y-coordinates reduced by 100
+    line(120 + add, 300, 120 + (spring1.x2 * 5) + add, 300); // y-coordinates reduced by 100
+    stroke(255, 0, 0);
+    line(120 + add, 100, 120 + (spring1.x1 * 5) + add, 200); // y-coordinates reduced by 100
+    line(120 + add + (spring1.x1 * 5), 200, 120 + (spring1.x2 * 5) + add, 300); // y-coordinates reduced by 100
+    line(120 + add + (spring1.x2 * 5), 300, 120 + add, 400); // y-coordinates reduced by 100
 
    
     }

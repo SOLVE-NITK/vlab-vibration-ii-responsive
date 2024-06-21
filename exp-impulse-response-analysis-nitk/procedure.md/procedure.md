@@ -14,9 +14,6 @@
   ![Alt text](images/res2.png)
 
    Click on Play icon <img src="images/play1.png" alt="Alt text" style="height:80px; width:80px;"> to run the simulation and click on Pause icon <img src="images/pause.png" alt="Alt text" style="height:80px; width:80px;"> to stop it.
-
- Click on the Refresh icon  <img src="images/refresh.png" alt="Alt text" style="height:80px;width:80px;"> to restart the experiment.
-
  
    Click on the Next icon  <img src="images/next2.png" alt="Alt text" style="height:80px; width:80px;"> to go further.  
 

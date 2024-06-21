@@ -85,17 +85,6 @@ function setup() {
     // The Dynamic Graph-2 object initialized with mag_func2 as argument:
     magFac2 = new DynamicGraph(55, 400, 300, 220, "Θ/Θst", "ω/ωn",0,20,0,300, System.mag_func2 , 255);
 
-    // Input Objects initialized:
-    // T0 = new NumberInput(620, 140, "T0(N)", 500, 1000, 750, 50,1, true);
-    // //Change w back to 5:
-    // w= new NumberInput(620, 190, "ω(rad/sec)", 0, 50, 4.3, 0.01,0.01, true);
-    // k1 = new NumberInput(620, 240, "K1 (N/m)", 2000, 5000, 2500, 50,1, true);
-    // // Change j1 to 25 
-    // j1 = new NumberInput(620, 290, "J1(kg-m2)", 10, 50, 30, 5,1, true);
-    // // Change k2 to 2500
-    // k2 = new NumberInput(620, 340, "K2 (N/m)", 2000, 5000, 2500, 50,1, true);
-    // // Change j2 to 75
-    // j2 = new NumberInput(620, 380, "J2(kg-m2)", 60, 100, 60, 5,1, true);
     varinit();
     T0 = $("#T0Spinner").spinner("value");
     w = $("#wSpinner").spinner("value");
@@ -103,12 +92,7 @@ function setup() {
     j1= $("#j1Spinner").spinner("value");
     k2= $("#k2Spinner").spinner("value");
     j2= $("#j2Spinner").spinner("value");
-    // Button Objects initialized:
-    // button1 = new Button(645, 430, pause)
-    // button2 = new Button(706, 430, graph)
-    // button3 = new Button(645,460,back)
-    // button4 = new Button(705, 460, graph)
-    // button5 = new Button(645,470,back)
+
     
 }
 
@@ -157,7 +141,7 @@ function simstate() {
   
   function screenchangePhase() {
     // document.getElementById("cleargraph").style.visibility = "visible";
-  console.log("hellonextpage");
+
     phaseAngleGraph();
   }
   function screenChangePrevious() {

@@ -55,12 +55,12 @@
     150
   );
   text(
-    "The first mode shape ratio [(X\u2081/X\u2082) AT ω\u2081] : " + spring1.ar1.toFixed(4),
+    "The first mode shape ratio [(X\u2081/X\u2082) at ω\u2081] : " + spring1.ar1.toFixed(4),
     30,
     200
   );
   text(
-    "The second mode shape ratio [(X\u2081/X\u2082) AT ω\u2082] : " + spring1.ar2.toFixed(4),
+    "The second mode shape ratio [(X\u2081/X\u2082) at ω\u2082] : " + spring1.ar2.toFixed(4),
     30,
     250
   );

@@ -24,6 +24,7 @@
   text("X\u2081", 20, 200);
   text("X\u2082", 20, 300);
   strokeWeight(0.5);
+  //left side, left top, length, right bottom
   line(45, 200, 590, 200);
   line(45, 300, 590, 300);
 
@@ -61,37 +62,43 @@
   // magFac2.draw();
 
   // t = t + dt;
+  console.log(spring1.x1);
+  console.log(spring1.x2);
+
 
   if (spring1.x1 == spring1.x2) {
+
     textFont("'Nunito', sans-serif");
     textSize(14.5);
-    text("MODE SHAPE", 250, 10); // Adjusted from (250, 110)
+    text("MODE SHAPE", 250, 30); // Adjusted from (250, 110)
     textFont("'Nunito', sans-serif");
-    textSize(12.5);
+    textSize(15.5);
+    strokeWeight(0.3);
     text(
       "When the initial excitation is given same to both masses in same direction, it",
       30,
-      50
+      80
     ); // Adjusted from (30, 150)
-    text("gives only the first mode shape of the system", 150, 70);
-    strokeWeight(1.5);
-    stroke(10);
-    line(300, 200, 300, 500);
+    text("gives only the first mode shape of the system", 150, 95);
+    strokeWeight(2);
+    stroke(0);
+    line(300, 100, 300, 400); // Moved up by 100 units
     stroke(0, 0, 255);
-    line(300, 300, 300 + spring1.ar1 * spring1.x2 * 2, 100);
-    line(300, 400, 300 + spring1.x2 * 2, 400);
+    line(300, 200, 300 + (spring1.ar2 * spring1.x2 * 2), 200); // Moved up by 100 units
+    line(300, 300, 300 + (spring1.x2 * 2), 300); // Moved up by 100 units
     stroke(255, 0, 0);
-    line(300, 200, 300 + spring1.ar1 * spring1.x2 * 2, 200);
-    line(300 + spring1.ar1 * spring1.x2 * 2, 300, 300 + spring1.x2 * 2, 300);
-    line(300 + spring1.x2 * 2, 400, 300, 500);
-  } else if (spring1.x1 == -spring1.x2) {
+    line(300, 100, 300 + (spring1.ar2 * spring1.x2 * 2), 200); // Moved up by 100 units
+    line(300 + (spring1.ar2 * spring1.x2 * 2), 200, 300 + (spring1.x2 * 2), 300); // Moved up by 100 units
+    line(300 + (spring1.x2 * 2), 300, 300, 400); // Moved up by 100 units
+  } else if (spring1.x1 == (-spring1.x2)) {
+    
     textFont("'Nunito', sans-serif;");
     textSize(20);
     text("MODE SHAPE", 250, 50);
     textFont("'Nunito', sans-serif");
   textSize(15.5);
 
-  strokeWeight(0.7);
+  strokeWeight(0.3);
     text(
       "When the initial excitation is given same to both masses in different direction, it",
       30,
@@ -110,7 +117,7 @@
     line(300 + spring1.ar2 * spring1.x2 * 2, 200, 300 + spring1.x2 * 2, 300); // Adjusted from (300 + (spring1.ar2 * spring1.x2 * 2), 300, 300 + (spring1.x2 * 2), 400)
     line(300 + spring1.x2 * 2, 300, 300, 400); // Adjusted from (300 + (spring1.x2 * 2), 400, 300, 500)
   } else {
-    textFont("'Nunito', sans-serif;");
+    textFont("'Nunito', sans-serif;");  
     textSize(20);
     text("MODE SHAPES", 215, 55);
     textSize(15);

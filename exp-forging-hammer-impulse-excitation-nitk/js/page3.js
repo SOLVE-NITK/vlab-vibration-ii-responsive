@@ -38,16 +38,18 @@
 
     let add = 320;
     let dy = 90;
+    text('ω\u2082' , 55+add ,100 +dy)
+    text('ω\u2081' , 55 +add, 120+dy)
     stroke('red')
     strokeWeight(5)
     point(45+add , 100+dy)
     strokeWeight(1)
-    text('ω\u2082' , 55+add ,100 +dy)
+   
     stroke('purple')
     strokeWeight(5)
     point(45+add , 120+dy);
     strokeWeight(1)
-    text('ω\u2081' , 55 +add, 120+dy)
+   
 
 
   strokeWeight(1);
